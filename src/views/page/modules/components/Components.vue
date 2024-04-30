@@ -27,135 +27,140 @@ const data = [
     name: '媒体组件',
     key: 'media',
     data: [
-      {
-        name: '轮播图',
-        type: 'banner',
-        icon: Icon.banner
-      },
+      // {
+      //   name: '轮播图',
+      //   type: 'banner',
+      //   icon: Icon.banner
+      // },
       {
         name: '图片',
         type: 'image',
         icon: Icon.image
       },
-      {
-        name: '图片橱窗',
-        type: 'window',
-        icon: Icon.window
-      },
-      {
-        name: '热区',
-        type: 'hotZone',
-        icon: Icon.window
-      },
-      {
-        name: '文章',
-        type: 'article',
-        icon: Icon.article
-      },
+      // {
+      //   name: '图片橱窗',
+      //   type: 'window',
+      //   icon: Icon.window
+      // },
+      // {
+      //   name: '热区',
+      //   type: 'hotZone',
+      //   icon: Icon.window
+      // },
+      // {
+      //   name: '文章',
+      //   type: 'article',
+      //   icon: Icon.article
+      // },
       {
         name: '视频',
         type: 'video',
         icon: Icon.video
       },
       {
-        name: '头条快报',
-        type: 'special',
-        icon: Icon.special
-      },
-    ]
-  },
-  {
-    name: '商城组件',
-    key: 'store',
-    data: [
-      {
-        name: '搜索框',
-        type: 'search',
-        icon: Icon.search
-      },
-      {
-        name: '导航组',
-        type: 'navBar',
-        icon: Icon.navBar
-      },
-      {
-        name: '店铺公告',
-        type: 'notice',
-        icon: Icon.notice
-      },
-      {
-        name: '商品组',
-        type: 'goods',
-        icon: Icon.goods
-      },
-      {
-        name: '优惠券',
-        type: 'coupon',
-        icon: Icon.coupon,
-        moduleKey: 'market-coupon'
-      },
-      {
-        name: '砍价商品',
-        type: 'bargain',
-        icon: Icon.bargain,
-        moduleKey: 'apps-bargain'
-      },
-      {
-        name: '拼团商品',
-        type: 'groupon',
-        icon: Icon.groupon,
-        moduleKey: 'apps-groupon'
-      },
-      {
-        name: '整点秒杀',
-        type: 'sharp',
-        icon: Icon.sharp,
-        moduleKey: 'apps-sharp'
-      },
-      {
-        name: '线下门店',
-        type: 'shop',
-        icon: Icon.shop,
-        // moduleKey: 'store-shop'
-      },
-      {
-        name: '在线客服',
-        type: 'service',
-        icon: Icon.service
-      }
-    ]
-  },
-  {
-    name: '其他组件',
-    key: 'other',
-    data: [
-      {
         name: '富文本',
         type: 'richText',
         icon: Icon.richText
       },
-      {
-        name: '辅助空白',
-        type: 'blank',
-        icon: Icon.blank
-      },
-      {
-        name: '辅助线',
-        type: 'guide',
-        icon: Icon.guide
-      },
-      {
-        name: '备案号',
-        type: 'ICPLicense',
-        icon: Icon.ICPLicense
-      },
-      {
-        name: '关注公众号',
-        type: 'officialAccount',
-        icon: Icon.officialAccount
-      },
+      // {
+      //   name: '头条快报',
+      //   type: 'special',
+      //   icon: Icon.special
+      // },
     ]
-  }
+  },
+  // {
+  //   name: '商城组件',
+  //   key: 'store',
+  //   data: [
+  //     {
+  //       name: '搜索框',
+  //       type: 'search',
+  //       icon: Icon.search
+  //     },
+  //     {
+  //       name: '导航组',
+  //       type: 'navBar',
+  //       icon: Icon.navBar
+  //     },
+  //     {
+  //       name: '店铺公告',
+  //       type: 'notice',
+  //       icon: Icon.notice
+  //     },
+  //     {
+  //       name: '商品组',
+  //       type: 'goods',
+  //       icon: Icon.goods
+  //     },
+  //     {
+  //       name: '优惠券',
+  //       type: 'coupon',
+  //       icon: Icon.coupon,
+  //       moduleKey: 'market-coupon'
+  //     },
+  //     {
+  //       name: '砍价商品',
+  //       type: 'bargain',
+  //       icon: Icon.bargain,
+  //       moduleKey: 'apps-bargain'
+  //     },
+  //     {
+  //       name: '拼团商品',
+  //       type: 'groupon',
+  //       icon: Icon.groupon,
+  //       moduleKey: 'apps-groupon'
+  //     },
+  //     {
+  //       name: '整点秒杀',
+  //       type: 'sharp',
+  //       icon: Icon.sharp,
+  //       moduleKey: 'apps-sharp'
+  //     },
+  //     {
+  //       name: '线下门店',
+  //       type: 'shop',
+  //       icon: Icon.shop,
+  //       // moduleKey: 'store-shop'
+  //     },
+  //     {
+  //       name: '在线客服',
+  //       type: 'service',
+  //       icon: Icon.service
+  //     }
+  //   ]
+  // },
+  // {
+  //   name: '其他组件',
+  //   key: 'other',
+  //   data: [
+  //     {
+  //       name: '富文本',
+  //       type: 'richText',
+  //       icon: Icon.richText
+  //     },
+  //     {
+  //       name: '辅助空白',
+  //       type: 'blank',
+  //       icon: Icon.blank
+  //     },
+  //     {
+  //       name: '辅助线',
+  //       type: 'guide',
+  //       icon: Icon.guide
+  //     },
+  //     {
+  //       name: '备案号',
+  //       type: 'ICPLicense',
+  //       icon: Icon.ICPLicense
+  //     },
+  //     {
+  //       name: '关注公众号',
+  //       type: 'officialAccount',
+  //       icon: Icon.officialAccount
+  //     },
+  //   ]
+  // }
 ]
 
 // 过滤开启的功能模块
