@@ -1084,27 +1084,27 @@ export const constantRouterMap = [
     path: '/404',
     component: () => import(/* webpackChunkName: "exception" */ '@/views/exception/404')
   },
-  {
-    path: '/',
-    name: 'root',
-    component: BasicLayout,
-    children: [
+  // {
+  //   path: '/',
+  //   name: 'root',
+  //   // component: BasicLayout,
+  //   children: [
       // 内容管理
       {
-        path: '/content',
-        name: 'content',
+        path: '/',
+        name: 'root',
         component: RouteView,
         meta: { title: '内容管理', icon: Icons.content, permission: ['/content'] },
         children: [
           {
-            path: '/content/article',
+            path: '/',
             component: RouteView,
-            redirect: '/content/article/index',
+            redirect: '/',
             meta: { title: '客户管理', keepAlive: false, permission: ['/content/article'] },
             moduleKey: 'content-article',
             children: [
               {
-                path: '/content/article/index',
+                path: '/',
                 component: () => import(/* webpackChunkName: "content" */ '@/views/content/article/Index'),
                 meta: { title: '客户列表', keepAlive: false, permission: ['/content/article/index'] }
               },
@@ -1183,6 +1183,6 @@ export const constantRouterMap = [
           }
         ]
       }
-    ]
-  }
+  //   ]
+  // }
 ]

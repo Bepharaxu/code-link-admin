@@ -2,7 +2,7 @@ import { axios } from '@/utils/request'
 
 // api接口列表
 const api = {
-  list: '/content.article.category/list',
+  list: '/customer',
   add: '/content.article.category/add',
   edit: '/content.article.category/edit',
   delete: '/content.article.category/delete'
