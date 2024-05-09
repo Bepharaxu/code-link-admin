@@ -151,16 +151,16 @@ export default {
       columns,
       // 加载数据方法 必须为 Promise 对象
       loadData: param => {
-        return ArticleApi.list({ ...param, ...this.queryParam })
-          .then(response => {
-            return response.data.list
-          })
+        // return ArticleApi.list({ ...param, ...this.queryParam })
+        //   .then(response => {
+        //     return response.data.list
+        //   })
       }
     }
   },
   created () {
     // 获取分类列表
-    this.getCategoryList()
+    // this.getCategoryList()
   },
   methods: {
 

@@ -1084,72 +1084,105 @@ export const constantRouterMap = [
     path: '/404',
     component: () => import(/* webpackChunkName: "exception" */ '@/views/exception/404')
   },
-
   {
-    path: '/store',
-    name: 'store',
-    component: RouteView,
-    redirect: '/store/setting',
-    meta: { title: '店铺管理', icon: Icons.shop, permission: ['/store'] },
+    path: '/',
+    name: 'root',
+    component: BasicLayout,
     children: [
+      // 内容管理
       {
-        path: '/store/setting',
-        component: () => import(/* webpackChunkName: "store" */ '@/views/store/Setting'),
-        meta: { title: '店铺设置', keepAlive: false, permission: ['/store/setting'] }
-      },
-      {
-        path: '/store/address/index',
-        component: () => import(/* webpackChunkName: "store" */ '@/views/store/address/Index'),
-        meta: { title: '地址管理', keepAlive: false, permission: ['/store/address/index'] }
-      },
-      {
-        path: '/page',
+        path: '/content',
+        name: 'content',
         component: RouteView,
-        redirect: '/page/index',
-        meta: { title: '店铺页面', keepAlive: false, permission: ['/page'] },
+        meta: { title: '内容管理', icon: Icons.content, permission: ['/content'] },
         children: [
           {
-            path: '/page/index',
-            component: () => import(/* webpackChunkName: "page" */ '@/views/page/Index'),
-            meta: { title: '页面设计', keepAlive: false, permission: ['/page/index'] },
-            // 访问其他页面时激活该菜单(router-link-active)
-            activePath: ['/page/create', '/page/update']
-          },
-          {
-            path: '/page/create',
-            component: () => import(/* webpackChunkName: "page" */ '@/views/page/Create'),
-            meta: { title: '新增页面', keepAlive: false, permission: ['/page/create'] },
-            hidden: true
-          },
-          {
-            path: '/page/update',
-            component: () => import(/* webpackChunkName: "page" */ '@/views/page/Update'),
-            meta: { title: '编辑页面', keepAlive: false, permission: ['/page/update'] },
-            hidden: true
-          },
-          {
-            path: '/page/category',
-            component: () => import(/* webpackChunkName: "page" */ '@/views/page/category/Index'),
-            meta: { title: '分类模板', keepAlive: false, permission: ['/page/category'] },
-            moduleKey: 'store-page-category'
+            path: '/content/article',
+            component: RouteView,
+            redirect: '/content/article/index',
+            meta: { title: '客户管理', keepAlive: false, permission: ['/content/article'] },
+            moduleKey: 'content-article',
+            children: [
+              {
+                path: '/content/article/index',
+                component: () => import(/* webpackChunkName: "content" */ '@/views/content/article/Index'),
+                meta: { title: '客户列表', keepAlive: false, permission: ['/content/article/index'] }
+              },
+              {
+                path: '/content/article/category/index',
+                component: () => import(/* webpackChunkName: "content" */ '@/views/content/article/category/Index'),
+                meta: { title: '文章分类', keepAlive: false, permission: ['/content/article/category/index'] }
+              }
+            ]
           }
         ]
       },
       {
-        path: '/store/style',
+        path: '/store',
+        name: 'store',
         component: RouteView,
-        redirect: '/store/style',
-        meta: { title: '店铺风格', keepAlive: false, permission: ['/store/style'] },
-        moduleKey: 'store-style-theme',
+        redirect: '/store/setting',
+        meta: { title: '店铺管理', icon: Icons.shop, permission: ['/store'] },
         children: [
           {
-            path: '/store/style/theme',
-            component: () => import(/* webpackChunkName: "store" */ '@/views/store/style/Theme'),
-            meta: { title: '主题风格', keepAlive: false, permission: ['/store/style/theme'] }
+            path: '/store/setting',
+            component: () => import(/* webpackChunkName: "store" */ '@/views/store/Setting'),
+            meta: { title: '店铺设置', keepAlive: false, permission: ['/store/setting'] }
+          },
+          {
+            path: '/store/address/index',
+            component: () => import(/* webpackChunkName: "store" */ '@/views/store/address/Index'),
+            meta: { title: '地址管理', keepAlive: false, permission: ['/store/address/index'] }
+          },
+          {
+            path: '/page',
+            component: RouteView,
+            redirect: '/page/index',
+            meta: { title: '店铺页面', keepAlive: false, permission: ['/page'] },
+            children: [
+              {
+                path: '/page/index',
+                component: () => import(/* webpackChunkName: "page" */ '@/views/page/Index'),
+                meta: { title: '页面设计', keepAlive: false, permission: ['/page/index'] },
+                // 访问其他页面时激活该菜单(router-link-active)
+                activePath: ['/page/create', '/page/update']
+              },
+              {
+                path: '/page/create',
+                component: () => import(/* webpackChunkName: "page" */ '@/views/page/Create'),
+                meta: { title: '新增页面', keepAlive: false, permission: ['/page/create'] },
+                hidden: true
+              },
+              {
+                path: '/page/update',
+                component: () => import(/* webpackChunkName: "page" */ '@/views/page/Update'),
+                meta: { title: '编辑页面', keepAlive: false, permission: ['/page/update'] },
+                hidden: true
+              },
+              {
+                path: '/page/category',
+                component: () => import(/* webpackChunkName: "page" */ '@/views/page/category/Index'),
+                meta: { title: '分类模板', keepAlive: false, permission: ['/page/category'] },
+                moduleKey: 'store-page-category'
+              }
+            ]
+          },
+          {
+            path: '/store/style',
+            component: RouteView,
+            redirect: '/store/style',
+            meta: { title: '店铺风格', keepAlive: false, permission: ['/store/style'] },
+            moduleKey: 'store-style-theme',
+            children: [
+              {
+                path: '/store/style/theme',
+                component: () => import(/* webpackChunkName: "store" */ '@/views/store/style/Theme'),
+                meta: { title: '主题风格', keepAlive: false, permission: ['/store/style/theme'] }
+              }
+            ]
           }
         ]
       }
     ]
   }
-
 ]
