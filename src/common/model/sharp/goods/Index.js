@@ -23,7 +23,7 @@ export default {
     return new Promise((resolve, reject) => {
       Promise.all([
         // 获取商品详情信息(编辑时)
-        this.getGoodsDetail(sharpGoodsId),
+        this.getGoodsDetail(sharpGoodsId)
       ]).then(() => {
         // 设置默认数据
         this.setDefaultData()
@@ -50,7 +50,7 @@ export default {
     const goodsInfo = this.formData.goods
     // 商品基本数据
     const goodsFormData = _.pick(goodsInfo, [
-      'goods_name',  'goods_no', 'delivery_type', 'sort',
+      'goods_name', 'goods_no', 'delivery_type', 'sort'
     ])
     // 单规格数据
     const skuOne = _.pick(goodsInfo.skuList[0], ['goods_price', 'line_price', 'stock_num', 'goods_weight'])
@@ -63,6 +63,6 @@ export default {
   // 设置默认的数据(无法用于form.setFieldsValue的数据)
   setDefaultData () {
 
-  },
+  }
 
 }

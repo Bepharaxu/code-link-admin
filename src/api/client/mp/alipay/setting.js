@@ -5,12 +5,12 @@ const api = {
   basic: '/client.mp.alipay.setting/basic',
   detail: '/client.mp.alipay.setting/detail',
   update: '/client.mp.alipay.setting/update',
-  updateBasic: '/client.mp.alipay.setting/updateBasic',
+  updateBasic: '/client.mp.alipay.setting/updateBasic'
 }
 
 /**
  * 获取支付宝小程序基础设置
- * @param {*} key 
+ * @param {*} key
  */
 export function basic () {
   return axios({
@@ -21,7 +21,7 @@ export function basic () {
 
 /**
  * 获取支付宝小程序设置 (指定)
- * @param {*} key 
+ * @param {*} key
  */
 export function detail (key) {
   return axios({
@@ -33,7 +33,7 @@ export function detail (key) {
 
 /**
  * 更新设置项
- * @param {*} key 
+ * @param {*} key
  * @param {*} data
  */
 export function update (key, data) {
@@ -46,7 +46,7 @@ export function update (key, data) {
 
 /**
  * 更新设置项（基础设置）
- * @param {*} key 
+ * @param {*} key
  * @param {*} data
  */
 export function updateBasic (data) {

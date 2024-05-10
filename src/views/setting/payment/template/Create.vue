@@ -407,7 +407,7 @@ const defaultData = {
         mchId: '',
         apiKey: '',
         apiclientCert: '',
-        apiclientKey: '',
+        apiclientKey: ''
       },
       provider: {
         spAppId: '',
@@ -457,7 +457,7 @@ export default {
         spApiclientKey: null,
         appCertPublicKey: null,
         alipayCertPublicKey: null,
-        alipayRootCert: null,
+        alipayRootCert: null
       }
     }
   },
@@ -479,7 +479,7 @@ export default {
           console.log('validate error')
           return false
         }
-      });
+      })
     },
 
     // 上传文件后记录到 uploadFiles中

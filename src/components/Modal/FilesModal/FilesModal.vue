@@ -152,7 +152,7 @@ export default {
     // 文件类型 (10图片 30视频)
     fileType: PropTypes.integer.def(FileTypeEnum.IMAGE.value),
     // 文件操作
-    actions: PropTypes.array.def(['delete', 'move', 'copyIds']),
+    actions: PropTypes.array.def(['delete', 'move', 'copyIds'])
   },
   data () {
     return {
@@ -179,7 +179,7 @@ export default {
         // 文件名称
         fileName: '',
         // 文件分组
-        groupId: 0,
+        groupId: 0
       },
       // modal(对话框)确定按钮 loading
       isLoading: true,

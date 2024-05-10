@@ -94,7 +94,7 @@ import { PaymentMethodEnum } from '@/common/enum/setting/payment'
 const PayMethodIcons = {
   [PaymentMethodEnum.ALIPAY.value]: { icon: payAlipay, color: '#009fe8' },
   [PaymentMethodEnum.BALANCE.value]: { icon: payBalance, color: '#e8a807' },
-  [PaymentMethodEnum.WECHAT.value]: { icon: payWechat, color: '#59b64c' },
+  [PaymentMethodEnum.WECHAT.value]: { icon: payWechat, color: '#59b64c' }
 }
 
 const columns = [
@@ -102,27 +102,27 @@ const columns = [
     title: '支付方式',
     dataIndex: 'method',
     width: '25%',
-    scopedSlots: { customRender: 'method' },
+    scopedSlots: { customRender: 'method' }
   },
   {
     title: '支付模板',
     dataIndex: 'template_id',
     width: '35%',
-    scopedSlots: { customRender: 'template' },
+    scopedSlots: { customRender: 'template' }
   },
   {
     title: '是否启用',
     dataIndex: 'is_enable',
     width: '20%',
-    scopedSlots: { customRender: 'enable' },
+    scopedSlots: { customRender: 'enable' }
   },
   {
     title: '是否为默认支付',
     dataIndex: 'is_default',
     width: '20%',
-    scopedSlots: { customRender: 'default' },
-  },
-];
+    scopedSlots: { customRender: 'default' }
+  }
+]
 
 export default {
   components: {},
@@ -145,7 +145,7 @@ export default {
       // 表单记录
       options: {},
       // 支付模板列表
-      templateList: [],
+      templateList: []
     }
   },
   computed: {
@@ -207,7 +207,7 @@ export default {
           this.isLoading = false
           this.isBtnLoading = false
         })
-    },
+    }
 
   }
 }

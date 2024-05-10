@@ -6,7 +6,7 @@ const api = {
   detail: '/order.delivery/detail',
   delivery: '/order.delivery/delivery',
   batch: '/order.delivery/batch',
-  eorder: '/order.delivery/eorder',
+  eorder: '/order.delivery/eorder'
 }
 
 // 列表记录

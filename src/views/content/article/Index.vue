@@ -7,8 +7,14 @@
         <a-button v-action:add type="primary" icon="plus" @click="handleAdd">新增</a-button>
       </div>
     </div>
-    <a-table :columns="columns" :data-source="loadData"></a-table>
-    
+    <a-table :columns="columns" :data-source="loadData">
+      <template slot="action" slot-scope="text, record">
+        <a-popconfirm title="是否删除?" @confirm="() => onDelete(record)">
+          <a href="javascript:;">删除</a>
+        </a-popconfirm>
+      </template>
+    </a-table>
+
     <AddForm ref="AddForm" :categoryList="categoryList" @handleSubmit="handleRefresh" />
     <EditForm ref="EditForm" :categoryList="categoryList" @handleSubmit="handleRefresh" />
   </a-card>
@@ -25,7 +31,7 @@ import AddForm from './modules/AddForm'
 const columns = [
   {
     title: 'ID',
-    dataIndex: 'id'
+    dataIndex: 'id',
   },
   {
     title: '客户姓名',
@@ -40,15 +46,15 @@ const columns = [
   {
     title: '备注',
     // width: '180px',
-    dataIndex: 'remark'
+    dataIndex: 'remark',
   },
   {
     title: '操作',
     dataIndex: 'action',
     width: '150px',
     fixed: 'right',
-    scopedSlots: { customRender: 'action' }
-  }
+    scopedSlots: { customRender: 'action' },
+  },
 ]
 
 export default {
@@ -57,7 +63,7 @@ export default {
     ContentHeader,
     STable,
     AddForm,
-    EditForm
+    EditForm,
   },
   data() {
     return {
@@ -73,24 +79,23 @@ export default {
       // 表头
       columns,
       // 加载数据方法 必须为 Promise 对象
-      loadData: []
+      loadData: [],
     }
   },
   created() {
-    // 获取分类列表
-    this.getCategoryList()
+    // 获取客户列表
+    this.getCustomerList()
   },
   methods: {
-
     // 获取客户列表
-    getCategoryList() {
+    getCustomerList() {
       this.isLoading = true
-      CategoryApi.list()
-        .then(result => {
+      ArticleApi.list()
+        .then((result) => {
           console.log(result, 'result')
           this.loadData = result
         })
-        .finally(() => this.isLoading = false)
+        .finally(() => (this.isLoading = false))
     },
 
     // 确认搜索
@@ -112,12 +117,12 @@ export default {
         content: '删除后不可恢复',
         onOk() {
           return ArticleApi.deleted({ articleId: item.article_id })
-            .then(result => {
+            .then((result) => {
               app.$message.success(result.message, 1.5)
               app.handleRefresh()
             })
-            .finally(result => modal.destroy())
-        }
+            .finally((result) => modal.destroy())
+        },
       })
     },
 
@@ -136,10 +141,18 @@ export default {
      * @param Boolean bool 强制刷新到第一页
      */
     handleRefresh(bool = false) {
-      this.$refs.table.refresh(bool)
-    }
-
-  }
+      this.getCustomerList()
+    },
+    onDelete(record) {
+      console.log(record, 'record')
+      ArticleApi.deleted(record.id)
+        .then((result) => {
+          console.log(result, 'result')
+          this.$message.success('删除成功', 1.5)
+          this.getCustomerList()
+        })
+    },
+  },
 }
 </script>
 <style lang="less" scoped>

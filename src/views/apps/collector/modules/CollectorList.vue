@@ -147,7 +147,7 @@ export default {
      */
     handleRefresh (bool = false) {
       this.$refs.table.refresh(bool)
-    },
+    }
 
   }
 }

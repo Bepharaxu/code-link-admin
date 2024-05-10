@@ -444,7 +444,7 @@ const other = {
           tips: '请输入以https://或http://开头的链接'
         }
       ]
-    },
+    }
   ]
 }
 

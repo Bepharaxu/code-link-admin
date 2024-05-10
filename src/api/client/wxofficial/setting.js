@@ -9,7 +9,7 @@ const api = {
 
 /**
  * 获取微信公众号基础设置
- * @param {*} key 
+ * @param {*} key
  */
 export function basic (params) {
   return axios({
@@ -20,7 +20,7 @@ export function basic (params) {
 
 /**
  * 获取微信公众号设置 (指定)
- * @param {*} key 
+ * @param {*} key
  */
 export function detail (key) {
   return axios({
@@ -32,7 +32,7 @@ export function detail (key) {
 
 /**
  * 更新设置项
- * @param {*} key 
+ * @param {*} key
  * @param {*} data
  */
 export function update (key, data) {

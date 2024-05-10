@@ -284,7 +284,7 @@ export default {
       // 当前页码
       page: 1,
       // 列表数据
-      orderList: { data: [], total: 0, per_page: 10 },
+      orderList: { data: [], total: 0, per_page: 10 }
     }
   },
   beforeCreate () {
@@ -365,8 +365,7 @@ export default {
     // 打印电子面单
     handleEorder (item) {
       this.$refs.EorderForm.handle(item)
-    },
-
+    }
 
   }
 }

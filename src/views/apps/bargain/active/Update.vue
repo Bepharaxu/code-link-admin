@@ -7,11 +7,11 @@
           <GoodsItem
             v-if="goods"
             :data="{
-            image: goods.goods_image,
-            imageAlt: '商品图片',
-            title: goods.goods_name,
-            subtitle: `¥${goods.goods_price_min}`
-          }"
+              image: goods.goods_image,
+              imageAlt: '商品图片',
+              title: goods.goods_name,
+              subtitle: `¥${goods.goods_price_min}`
+            }"
             :subTitleColor="true"
           />
         </a-form-item>
@@ -157,8 +157,8 @@
 
 <script>
 import moment from 'moment'
-import _ from 'lodash'
-import { pick, get } from 'lodash'
+import _, { pick, get } from 'lodash'
+
 import * as Api from '@/api/bargain/active'
 import * as GoodsApi from '@/api/goods'
 import { isEmpty } from '@/utils/util'

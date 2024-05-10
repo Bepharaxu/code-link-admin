@@ -86,15 +86,15 @@ export default {
       LODOP.SET_PRINT_PAGESIZE(0)
 
       LODOP.NewPageA()
-      LODOP.ADD_PRINT_HTML(0, 0, "100%", "100%", template)
+      LODOP.ADD_PRINT_HTML(0, 0, '100%', '100%', template)
 
       // LODOP.NewPageA()
       // LODOP.ADD_PRINT_HTML(0, 0, "100%", "100%", template)
 
-      LODOP.SET_PRINT_MODE("AUTO_CLOSE_PREWINDOW", true)
-      LODOP.SET_PRINT_MODE("CATCH_PRINT_STATUS", true)
-      LODOP.SET_PRINT_MODE("PRINT_PAGE_PERCENT", "Auto-Width")
-      LODOP.SET_SHOW_MODE("HIDE_PAGE_PERCENT", true)
+      LODOP.SET_PRINT_MODE('AUTO_CLOSE_PREWINDOW', true)
+      LODOP.SET_PRINT_MODE('CATCH_PRINT_STATUS', true)
+      LODOP.SET_PRINT_MODE('PRINT_PAGE_PERCENT', 'Auto-Width')
+      LODOP.SET_SHOW_MODE('HIDE_PAGE_PERCENT', true)
       LODOP.PREVIEW()
     }
 

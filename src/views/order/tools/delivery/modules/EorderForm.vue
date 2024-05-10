@@ -151,12 +151,12 @@ const columns1 = [
   {
     title: '可发货的数量',
     scopedSlots: { customRender: 'quantity' },
-    width: '20%',
+    width: '20%'
   },
   {
     title: '发货数量',
     scopedSlots: { customRender: 'input' },
-    width: '30%',
+    width: '30%'
   }
 ]
 
@@ -169,12 +169,12 @@ const columns2 = [
   {
     title: '购买数量',
     dataIndex: 'total_num',
-    width: '20%',
+    width: '20%'
   },
   {
     title: '已发货的数量',
     scopedSlots: { customRender: 'quantity' },
-    width: '20%',
+    width: '20%'
   }
 ]
 
@@ -184,7 +184,7 @@ const rules = {
   ],
   addressId: [
     { required: true, message: '请选择发货地址', trigger: 'blur' }
-  ],
+  ]
 }
 
 export default {
@@ -221,7 +221,7 @@ export default {
         // 商家发货地址
         addressId: undefined,
         // 同步至微信小程序《发货信息录入》
-        syncMpWeixinShipping: 1,
+        syncMpWeixinShipping: 1
       },
       // 商家发货地址列表
       addressList: [],
@@ -232,7 +232,7 @@ export default {
       // 发货商品数量
       packGoodsData: [],
       // 选择的商品
-      selectedRowKeys: [],
+      selectedRowKeys: []
     }
   },
   computed: {
@@ -270,7 +270,7 @@ export default {
         })
         return list
       }
-    },
+    }
   },
   beforeCreate () {
     // 批量给当前实例赋值
@@ -373,15 +373,15 @@ export default {
       LODOP.SET_PRINT_PAGESIZE(0)
 
       LODOP.NewPageA()
-      LODOP.ADD_PRINT_HTML(0, 0, "100%", "100%", template)
+      LODOP.ADD_PRINT_HTML(0, 0, '100%', '100%', template)
 
       // LODOP.NewPageA()
       // LODOP.ADD_PRINT_HTML(0, 0, "100%", "100%", template)
 
-      LODOP.SET_PRINT_MODE("AUTO_CLOSE_PREWINDOW", true)
-      LODOP.SET_PRINT_MODE("CATCH_PRINT_STATUS", true)
-      LODOP.SET_PRINT_MODE("PRINT_PAGE_PERCENT", "Auto-Width")
-      LODOP.SET_SHOW_MODE("HIDE_PAGE_PERCENT", true)
+      LODOP.SET_PRINT_MODE('AUTO_CLOSE_PREWINDOW', true)
+      LODOP.SET_PRINT_MODE('CATCH_PRINT_STATUS', true)
+      LODOP.SET_PRINT_MODE('PRINT_PAGE_PERCENT', 'Auto-Width')
+      LODOP.SET_SHOW_MODE('HIDE_PAGE_PERCENT', true)
       LODOP.PREVIEW()
     }
 

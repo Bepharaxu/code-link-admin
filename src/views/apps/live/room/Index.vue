@@ -68,7 +68,7 @@ const LiveStatusColorEnum = {
   104: 'red',
   105: 'orange',
   106: 'red',
-  107: 'red',
+  107: 'red'
 }
 
 export default {

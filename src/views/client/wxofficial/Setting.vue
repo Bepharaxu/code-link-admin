@@ -52,7 +52,7 @@
           </p>
         </a-form-item>
 
-        <!-- 
+        <!--
         <a-divider orientation="left">服务器配置</a-divider>
         <a-form-item class="mt-30" label="服务器地址 URL" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <span>{{ serverUrl }}</span>
@@ -164,7 +164,7 @@ export default {
       radioStyle: {
         display: 'block',
         marginBottom: '16px'
-      },
+      }
     }
   },
   // 初始化数据
@@ -196,7 +196,7 @@ export default {
       !isEmpty(form.getFieldsValue()) && $nextTick(() => {
         form.setFieldsValue(pick(record, [
           'enabled', 'name', 'originalId', 'qrcodeImageUrl',
-          'appId', 'appSecret',
+          'appId', 'appSecret'
           //  'token', 'encodingAesKey', 'encryptionType'
         ]))
       })

@@ -111,7 +111,7 @@ const ApplyStatusColor = {
   [ApplyStatusEnum.WAIT.value]: '',
   [ApplyStatusEnum.PASSED.value]: 'green',
   [ApplyStatusEnum.REJECT.value]: 'red',
-  [ApplyStatusEnum.PAYMENT.value]: 'green',
+  [ApplyStatusEnum.PAYMENT.value]: 'green'
 }
 
 export default {

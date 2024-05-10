@@ -8,7 +8,7 @@
             v-decorator="['default', { rules: [{ required: true }] }]"
             @change="onChangeEngine"
           >
-            <a-radio v-for="(engine, index)  in record.engine" :key="index" :value="index">
+            <a-radio v-for="(engine, index) in record.engine" :key="index" :value="index">
               <span>{{ engine.name }}</span>
               <a-tag v-if="index === 'aliyun'" class="ml-5" color="green">推荐</a-tag>
             </a-radio>

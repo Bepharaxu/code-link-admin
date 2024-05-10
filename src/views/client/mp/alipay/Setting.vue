@@ -216,10 +216,10 @@ export default {
       uploadFiles: {
         appCertPublicKey: null,
         alipayCertPublicKey: null,
-        alipayRootCert: null,
+        alipayRootCert: null
       },
       // 服务端域名
-      domain: '',
+      domain: ''
     }
   },
   // 初始化数据
@@ -266,7 +266,7 @@ export default {
           console.log('validate error')
           return false
         }
-      });
+      })
     },
 
     // 上传文件后记录到 uploadFiles中
@@ -304,7 +304,6 @@ export default {
       }
       return formData
     }
-
 
   }
 }

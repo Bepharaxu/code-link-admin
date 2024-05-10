@@ -109,7 +109,7 @@ export default {
       // 当前记录
       record: {},
       // 物流公司列表
-      expressList: [],
+      expressList: []
     }
   },
   async created () {

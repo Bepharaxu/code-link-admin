@@ -50,7 +50,7 @@
             treeCheckable
             treeCheckStrictly
             allowClear
-            v-decorator="['categorys', { rules: [{ required: true, message: '请至少选择1个商品分类'  }] }]"
+            v-decorator="['categorys', { rules: [{ required: true, message: '请至少选择1个商品分类' }] }]"
           ></a-tree-select>
         </a-form-item>
         <a-form-item
@@ -61,7 +61,7 @@
         >
           <a-select
             style="width: 300px"
-            v-decorator="['delivery_id', { rules: [{ required: true, message: '请选择运费模板'  }] }]"
+            v-decorator="['delivery_id', { rules: [{ required: true, message: '请选择运费模板' }] }]"
             placeholder="请选择运费模板"
           >
             <a-select-option
@@ -179,7 +179,7 @@ export default {
     // 刷新采集记录列表
     handleRefreshCollectorList () {
       this.$refs.CollectorList.handleRefresh()
-    },
+    }
 
   }
 

@@ -128,7 +128,7 @@ export default {
     // 关闭对话框事件
     handleCancel () {
       this.visible = false
-    },
+    }
 
   }
 }

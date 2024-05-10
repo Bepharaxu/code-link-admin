@@ -61,14 +61,14 @@ const data = [
         name: '富文本',
         type: 'richText',
         icon: Icon.richText
-      },
+      }
       // {
       //   name: '头条快报',
       //   type: 'special',
       //   icon: Icon.special
       // },
     ]
-  },
+  }
   // {
   //   name: '商城组件',
   //   key: 'store',

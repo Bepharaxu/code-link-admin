@@ -81,7 +81,7 @@ const domainList = [
   {
     name: 'downloadFile',
     protocol: 'https'
-  },
+  }
 ]
 
 export default {
@@ -102,7 +102,7 @@ export default {
       // 当前记录详情
       record: {},
       // 服务端域名
-      domain: '',
+      domain: ''
     }
   },
   // 初始化数据

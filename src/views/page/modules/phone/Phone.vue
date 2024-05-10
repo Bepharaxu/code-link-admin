@@ -242,7 +242,7 @@
           >
             <ul
               class="goods-list clearfix"
-              :class="[`display__${item.style.display}`, `column__${item.style.column}`  ]"
+              :class="[`display__${item.style.display}`, `column__${item.style.column}` ]"
             >
               <li
                 class="goods-item"

@@ -121,7 +121,7 @@ export default {
       this.imageW = 0
       this.imageH = 0
       this.maps = []
-    },
+    }
 
   }
 }

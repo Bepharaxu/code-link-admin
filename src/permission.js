@@ -51,7 +51,7 @@ router.beforeEach((to, from, next) => {
               .then(routers => {
                 // 动态添加可访问路由表
                 // router.addRoutes(routers)
-                for (let x of routers) {
+                for (const x of routers) {
                   router.addRoute(x)
                 }
                 // 请求带有 redirect 重定向时，登录自动重定向到该地址

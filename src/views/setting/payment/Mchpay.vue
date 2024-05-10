@@ -103,7 +103,7 @@ export default {
       // 当前记录详情
       record: {},
       // 支付模板列表
-      templateList: [],
+      templateList: []
     }
   },
   computed: {
@@ -112,7 +112,7 @@ export default {
     },
     alipayTemplateList () {
       return this.templateList.filter(item => item.method === 'alipay')
-    },
+    }
   },
   // 初始化数据
   async created () {

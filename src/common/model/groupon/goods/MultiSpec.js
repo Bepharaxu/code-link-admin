@@ -18,7 +18,7 @@ const defaultColumns = [
     title: '商品库存',
     dataIndex: 'stock_num',
     scopedSlots: { customRender: 'stock_num' }
-  },
+  }
   // {
   //   title: '拼团价格（元）',
   //   dataIndex: 'groupon_price',
@@ -33,7 +33,7 @@ const defaultSkuItemData = {
   goods_price: '',
   stock_num: '',
   groupon_price: '',
-  steps_price_config: [],
+  steps_price_config: []
 }
 
 /**
@@ -41,7 +41,6 @@ const defaultSkuItemData = {
  * GoodsModel
  */
 export default class MultiSpec {
-
   // 当前vue实例
   app = undefined
 
@@ -62,7 +61,7 @@ export default class MultiSpec {
    * @param {array} specList 规格列表
    * @param {array} skuList SKU列表
    */
-  constructor(app) {
+  constructor (app) {
     this.app = app
     this.multiSpecData = {
       // 规格列表
@@ -377,7 +376,7 @@ export default class MultiSpec {
   verifySkuList () {
     const verifiedColumns = [
       { field: 'groupon_price', name: '拼团价格' },
-      { field: 'groupon_price_', name: '拼团价格', dynamic: true },
+      { field: 'groupon_price_', name: '拼团价格', dynamic: true }
     ]
     this.error = ''
     const skuList = this.multiSpecData.skuList

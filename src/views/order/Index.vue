@@ -108,11 +108,11 @@
                       <td>
                         <GoodsItem
                           :data="{
-                          image: goodsItm.goods_image,
-                          imageAlt: '商品图片',
-                          title: goodsItm.goods_name,
-                          goodsProps: goodsItm.goods_props
-                        }"
+                            image: goodsItm.goods_image,
+                            imageAlt: '商品图片',
+                            title: goodsItm.goods_name,
+                            goodsProps: goodsItm.goods_props
+                          }"
                         />
                       </td>
                       <td>
@@ -175,21 +175,21 @@
                             <a
                               v-action:deliver
                               v-if="(
-                              item.pay_status == PayStatusEnum.SUCCESS.value
-                                && inArray(item.delivery_type, [ DeliveryTypeEnum.EXPRESS.value, DeliveryTypeEnum.NOTHING.value])
-                                && item.delivery_status != DeliveryStatusEnum.DELIVERED.value
-                                && !inArray(item.order_status, [OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
-                            )"
+                                item.pay_status == PayStatusEnum.SUCCESS.value
+                                  && inArray(item.delivery_type, [ DeliveryTypeEnum.EXPRESS.value, DeliveryTypeEnum.NOTHING.value])
+                                  && item.delivery_status != DeliveryStatusEnum.DELIVERED.value
+                                  && !inArray(item.order_status, [OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
+                              )"
                               @click="handleDelivery(item)"
                             >发货</a>
                             <a
                               v-action:extract
                               v-if="(
-                              item.pay_status == PayStatusEnum.SUCCESS.value
-                                && item.delivery_type == DeliveryTypeEnum.EXTRACT.value
-                               && item.delivery_status != DeliveryStatusEnum.DELIVERED.value
-                                && !inArray(item.order_status, [OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
-                            )"
+                                item.pay_status == PayStatusEnum.SUCCESS.value
+                                  && item.delivery_type == DeliveryTypeEnum.EXTRACT.value
+                                  && item.delivery_status != DeliveryStatusEnum.DELIVERED.value
+                                  && !inArray(item.order_status, [OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
+                              )"
                               @click="handleExtract(item)"
                             >自提核销</a>
                             <a
@@ -299,7 +299,7 @@ const SearchTypeEnum = [
   { name: '会员昵称', value: 20 },
   { name: '会员ID', value: 30 },
   { name: '收货人姓名', value: 40 },
-  { name: '收货人电话', value: 50 },
+  { name: '收货人电话', value: 50 }
 ]
 
 export default {

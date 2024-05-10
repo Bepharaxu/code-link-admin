@@ -125,7 +125,7 @@ export default {
         },
         {
           title: '排序',
-          dataIndex: 'sort',
+          dataIndex: 'sort'
         },
         {
           title: '添加时间',

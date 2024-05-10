@@ -44,7 +44,7 @@ const vueConfig = {
       //   GIT_HASH: JSON.stringify(GitRevision.version()),
       //   BUILD_DATE: buildDate
       // })
-    ],
+    ]
     // if prod, add externals
     // externals: isProd ? assetsCDN.externals : {}
   },

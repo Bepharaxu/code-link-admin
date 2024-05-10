@@ -6,7 +6,7 @@
         <a-form-item class="mt-30" label="APIKEY" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-input
             placeholder="请输入APIKEY"
-            v-decorator="['config.99api.apiKey', {  rules: [{ required: true, min: 2, message: '请输入APIKEY' }]  }]"
+            v-decorator="['config.99api.apiKey', { rules: [{ required: true, min: 2, message: '请输入APIKEY' }] }]"
           />
           <div class="form-item-help">
             <small>请填写99API的APIKEY，可前往</small>

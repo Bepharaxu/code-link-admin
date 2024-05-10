@@ -45,7 +45,6 @@ function plugin (Vue) {
           return findPermission.actionList.findIndex((val) => {
             return val === action
           }) > -1
-
         }
       }
     }

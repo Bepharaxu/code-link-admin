@@ -372,7 +372,7 @@ export default {
       // 当前记录详情
       setting: {},
       // 购买指定商品的列表
-      becomeBuyGoodsList: [],
+      becomeBuyGoodsList: []
     }
   },
   // 初始化数据

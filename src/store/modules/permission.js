@@ -166,7 +166,7 @@ const permission = {
   state: {
     routers: constantRouterMap,
     addRouters: [],
-    modules: []   // 开启功能模块
+    modules: [] // 开启功能模块
   },
   mutations: {
     SET_ROUTERS: (state, routers) => {
@@ -175,7 +175,7 @@ const permission = {
     },
     SET_MODULES: (state, modules) => {
       state.modules = modules
-    },
+    }
   },
   actions: {
 

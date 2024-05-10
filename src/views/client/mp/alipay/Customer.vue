@@ -81,7 +81,7 @@ const defaultData = {
     myznkf: {
       tntInstId: '',
       scene: ''
-    },
+    }
   }
 }
 
@@ -98,7 +98,7 @@ export default {
       isLoading: false,
       confirmLoading: false,
       // 当前记录详情
-      record: cloneDeep(defaultData),
+      record: cloneDeep(defaultData)
     }
   },
   // 初始化数据
@@ -129,7 +129,7 @@ export default {
             .finally(result => this.confirmLoading = false)
         }
       })
-    },
+    }
 
   }
 }

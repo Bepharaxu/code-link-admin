@@ -31,7 +31,7 @@ export default {
   data () {
     return {
       // 文件列表
-      fileList: [],
+      fileList: []
     }
   },
   watch: {
@@ -67,7 +67,7 @@ export default {
       if (index > -1) {
         fileList.splice(index, 1)
       }
-    },
+    }
 
   }
 }

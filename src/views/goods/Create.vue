@@ -18,7 +18,7 @@
             <a-form-item label="商品名称" :labelCol="labelCol" :wrapperCol="wrapperCol">
               <a-input
                 placeholder="请输入商品名称"
-                v-decorator="['goods_name', { rules: [{ required: true, min: 2, message: '请输入至少2个字符'  }] }]"
+                v-decorator="['goods_name', { rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] }]"
               />
             </a-form-item>
             <a-form-item label="商品分类" :labelCol="labelCol" :wrapperCol="wrapperCol">
@@ -29,7 +29,7 @@
                 treeCheckable
                 treeCheckStrictly
                 allowClear
-                v-decorator="['categorys', { rules: [{ required: true, message: '请至少选择1个商品分类'  }] }]"
+                v-decorator="['categorys', { rules: [{ required: true, message: '请至少选择1个商品分类' }] }]"
               ></a-tree-select>
               <div class="form-item-help">
                 <router-link target="_blank" :to="{ path: '/goods/category/index' }">去新增</router-link>
@@ -45,7 +45,7 @@
               <SelectImage
                 multiple
                 :maxNum="10"
-                v-decorator="['imagesIds', { rules: [{ required: true, message: '请至少上传1张商品图片'  }] }]"
+                v-decorator="['imagesIds', { rules: [{ required: true, message: '请至少上传1张商品图片' }] }]"
               />
             </a-form-item>
             <a-form-item label="商品编码" :labelCol="labelCol" :wrapperCol="wrapperCol">
@@ -81,7 +81,7 @@
             >
               <a-select
                 style="width: 300px"
-                v-decorator="['delivery_id', { rules: [{ required: true, message: '请选择运费模板'  }] }]"
+                v-decorator="['delivery_id', { rules: [{ required: true, message: '请选择运费模板' }] }]"
                 placeholder="请选择运费模板"
               >
                 <a-select-option
@@ -227,7 +227,7 @@
           <div class="tab-pane" v-show="tabKey == 2">
             <a-form-item label="商品详情" :labelCol="labelCol" :wrapperCol="{span: 16}">
               <Ueditor
-                v-decorator="['content', { rules: [{ required: true, message: '商品详情不能为空'  }] }]"
+                v-decorator="['content', { rules: [{ required: true, message: '商品详情不能为空' }] }]"
               />
             </a-form-item>
           </div>
@@ -352,8 +352,8 @@
                       addonAfter="折"
                       :inputProps="{ min: 0, max: 9.9 }"
                       v-decorator="[`alone_grade_equity[grade_id:${item.grade_id}]`, {
-                      initialValue: formData.defaultUserGradeValue[item.grade_id], rules: [{ required: true, message: '折扣率不能为空' }]
-                    }]"
+                        initialValue: formData.defaultUserGradeValue[item.grade_id], rules: [{ required: true, message: '折扣率不能为空' }]
+                      }]"
                     />
                   </a-form-item>
                 </div>

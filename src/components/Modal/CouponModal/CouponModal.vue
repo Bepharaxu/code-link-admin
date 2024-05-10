@@ -88,13 +88,13 @@ const columns = [
   {
     title: '优惠券ID',
     dataIndex: 'coupon_id',
-    width: '12%',
+    width: '12%'
   },
   {
     title: '优惠券名称',
     dataIndex: 'name',
     scopedSlots: { customRender: 'name' },
-    width: '26%',
+    width: '26%'
   },
   {
     title: '优惠券类型',

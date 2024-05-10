@@ -20,7 +20,7 @@ export default {
     // 主题类型  primary / success / info / warning / error
     type: PropTypes.string.def('primary'),
     // 模式选择  dark(深色背景)、light(浅色背景)、plain(白色背景)
-    mode: PropTypes.string.def('light'),
+    mode: PropTypes.string.def('light')
   },
   data () {
     return {}

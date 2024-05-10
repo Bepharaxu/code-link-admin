@@ -4,7 +4,7 @@ import { axios } from '@/utils/request'
 const api = {
   list: '/live.room/list',
   sync: '/live.room/sync',
-  setTop: '/live.room/setTop',
+  setTop: '/live.room/setTop'
 }
 
 // 列表记录

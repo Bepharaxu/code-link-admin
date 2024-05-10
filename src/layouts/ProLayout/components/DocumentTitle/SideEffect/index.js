@@ -1,4 +1,4 @@
-import _classCallCheck from 'babel-runtime/helpers/classCallCheck';
+import _classCallCheck from 'babel-runtime/helpers/classCallCheck'
 
 /* eslint-disable */
 var SideEffect = function SideEffect (_ref) {

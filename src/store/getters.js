@@ -14,7 +14,7 @@ const getters = {
   // 开启的功能模块
   modules: state => state.permission.modules,
   // 站点配置文件
-  publicConfig: () => window.publicConfig,
+  publicConfig: () => window.publicConfig
 }
 
 export default getters

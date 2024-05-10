@@ -3,7 +3,7 @@ import { axios } from '@/utils/request'
 // api接口列表
 const api = {
   options: '/setting.payment/options',
-  update: '/setting.payment/update',
+  update: '/setting.payment/update'
 }
 
 // 支付设置详情

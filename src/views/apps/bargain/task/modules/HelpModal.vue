@@ -87,7 +87,7 @@ export default {
           .then(response => {
             return response.data.list
           })
-      },
+      }
     }
   },
   methods: {

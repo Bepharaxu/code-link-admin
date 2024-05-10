@@ -129,7 +129,7 @@ export default {
     // 最大选择的数量限制, multiple模式下有效
     maxNum: PropTypes.integer.def(100),
     // 默认选中的列表记录
-    defaultList: PropTypes.array.def([]),
+    defaultList: PropTypes.array.def([])
   },
   components: {
     STable

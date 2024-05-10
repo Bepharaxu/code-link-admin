@@ -20,7 +20,6 @@ import market from '@/assets/icons/market.svg?inline'
 import statistics from '@/assets/icons/statistics.svg?inline'
 import apps from '@/assets/icons/apps.svg?inline'
 
-
 // 通用图标
 import arrowRight from '@/assets/icons/arrow-right.svg?inline'
 import mpWeixin from '@/assets/icons/mp-weixin.svg?inline'

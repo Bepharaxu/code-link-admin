@@ -7,11 +7,11 @@
           <GoodsItem
             v-if="goods"
             :data="{
-            image: goods.goods_image,
-            imageAlt: '商品图片',
-            title: goods.goods_name,
-            subtitle: `¥${goods.goods_price_min}`
-          }"
+              image: goods.goods_image,
+              imageAlt: '商品图片',
+              title: goods.goods_name,
+              subtitle: `¥${goods.goods_price_min}`
+            }"
             :subTitleColor="true"
           />
         </a-form-item>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- 单规格的表单内容 -->
-        <div v-show="record.spec_type == 10 &&  goods && record">
+        <div v-show="record.spec_type == 10 && goods && record">
           <a-form-item label="秒杀价格" :labelCol="labelCol" :wrapperCol="wrapperCol">
             <a-input-number
               :min="0.01"

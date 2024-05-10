@@ -37,7 +37,7 @@ import { ExportStatusEnum } from '@/common/enum/order/export'
 const ExportStatusColorEnum = {
   [ExportStatusEnum.NORMAL.value]: '',
   [ExportStatusEnum.COMPLETED.value]: 'green',
-  [ExportStatusEnum.FAIL.value]: 'red',
+  [ExportStatusEnum.FAIL.value]: 'red'
 }
 
 // 订单导出记录组件
@@ -94,7 +94,7 @@ export default {
      */
     handleRefresh (bool = false) {
       this.$refs.table.refresh(bool)
-    },
+    }
 
   }
 }

@@ -70,7 +70,7 @@ export default {
     // 拼团类型
     activeType: PropTypes.integer.def(ActiveTypeEnum.NORMAL.value),
     // 阶梯团模式
-    stepsConfig: PropTypes.array.def([]),
+    stepsConfig: PropTypes.array.def([])
   },
   data () {
     return {

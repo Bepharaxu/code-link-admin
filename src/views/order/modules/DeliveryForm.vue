@@ -145,12 +145,12 @@ const columns1 = [
   {
     title: '可发货的数量',
     scopedSlots: { customRender: 'quantity' },
-    width: '20%',
+    width: '20%'
   },
   {
     title: '发货数量',
     scopedSlots: { customRender: 'input' },
-    width: '30%',
+    width: '30%'
   }
 ]
 
@@ -163,12 +163,12 @@ const columns2 = [
   {
     title: '购买数量',
     dataIndex: 'total_num',
-    width: '20%',
+    width: '20%'
   },
   {
     title: '已发货的数量',
     scopedSlots: { customRender: 'quantity' },
-    width: '20%',
+    width: '20%'
   }
 ]
 
@@ -178,7 +178,7 @@ const rules = {
   ],
   expressNo: [
     { required: true, message: '请填写物流单号', trigger: 'blur' }
-  ],
+  ]
 }
 
 export default {
@@ -221,10 +221,10 @@ export default {
         // 物流单号
         expressNo: '',
         // 同步至微信小程序《发货信息录入》
-        syncMpWeixinShipping: 1,
+        syncMpWeixinShipping: 1
       },
       // 选择的商品
-      selectedRowKeys: [],
+      selectedRowKeys: []
     }
   },
   computed: {
@@ -262,7 +262,7 @@ export default {
         })
         return list
       }
-    },
+    }
   },
   beforeCreate () {
     // 批量给当前实例赋值

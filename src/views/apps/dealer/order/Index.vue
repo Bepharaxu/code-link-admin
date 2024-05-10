@@ -265,7 +265,7 @@ export default {
   name: 'Index',
   components: {
     GoodsItem,
-    UserItem,
+    UserItem
   },
   data () {
     return {

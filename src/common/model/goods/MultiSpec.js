@@ -90,7 +90,7 @@ export default class MultiSpec {
    * @param {array} specList 规格列表
    * @param {array} skuList SKU列表
    */
-  constructor() {
+  constructor () {
     this.multiSpecData = {
       // 规格列表
       specList: [],

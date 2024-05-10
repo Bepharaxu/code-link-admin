@@ -99,7 +99,7 @@ const defaultData = {
     auto: {
       category: 0,
       goodsSort: 'all',
-      showNum: 6,
+      showNum: 6
     },
     goodsIds: []
   },
@@ -168,7 +168,7 @@ export default {
       Api.update(this.key, { form: this.record })
         .then(result => this.$message.success(result.message, 1.5))
         .finally(result => this.confirmLoading = false)
-    },
+    }
 
   }
 }

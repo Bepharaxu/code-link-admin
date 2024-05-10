@@ -152,7 +152,7 @@ const defaultData = {
     mainText: '#ffffff',
     viceBg: '#ffb100',
     viceBg2: '#ffb900',
-    viceText: '#ffffff',
+    viceText: '#ffffff'
   }
 }
 
@@ -165,7 +165,7 @@ const themeTemplate = [
     viceBg: '#ffb100',
     viceBg2: '#ffb900',
     viceText: '#ffffff',
-    gradualChange: 1,
+    gradualChange: 1
   },
   {
     mainBg: '#ff547b',
@@ -174,7 +174,7 @@ const themeTemplate = [
     viceBg: '#FFE6E8',
     viceBg2: '#FFE6E8',
     viceText: '#ff547b',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#63be72',
@@ -183,7 +183,7 @@ const themeTemplate = [
     viceBg: '#E1F4E3',
     viceBg2: '#E1F4E3',
     viceText: '#50be58',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#c3a769',
@@ -192,7 +192,7 @@ const themeTemplate = [
     viceBg: '#F3EEE1',
     viceBg2: '#F3EEE1',
     viceText: '#C3A769',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#2f2f34',
@@ -201,7 +201,7 @@ const themeTemplate = [
     viceBg: '#EBECF2',
     viceBg2: '#EBECF2',
     viceText: '#2F2F34',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#884cff',
@@ -210,7 +210,7 @@ const themeTemplate = [
     viceBg: '#EFE6FF',
     viceBg2: '#EFE6FF',
     viceText: '#884cff',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#65c4aa',
@@ -219,7 +219,7 @@ const themeTemplate = [
     viceBg: '#D9F6EF',
     viceBg2: '#D9F6EF',
     viceText: '#65c4aa',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#FCC600',
@@ -228,7 +228,7 @@ const themeTemplate = [
     viceBg: '#1D262E',
     viceBg2: '#1D262E',
     viceText: '#ffffff',
-    gradualChange: 0,
+    gradualChange: 0
   },
   {
     mainBg: '#4a90e2',
@@ -237,7 +237,7 @@ const themeTemplate = [
     viceBg: '#D6E9FC',
     viceBg2: '#D6E9FC',
     viceText: '#0080FF',
-    gradualChange: 0,
+    gradualChange: 0
   }
 ]
 
@@ -264,7 +264,7 @@ export default {
       // 系统推荐主题
       themeTemplate,
       // 当前记录详情
-      record: cloneDeep(defaultData),
+      record: cloneDeep(defaultData)
     }
   },
   computed: {
@@ -313,7 +313,7 @@ export default {
       Api.update(this.key, { form: this.record })
         .then(result => this.$message.success(result.message, 1.5))
         .finally(result => this.confirmLoading = false)
-    },
+    }
 
   }
 }

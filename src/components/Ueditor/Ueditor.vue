@@ -189,7 +189,7 @@ export default {
 
     // 获取选中的文本
     getSelectionText () {
-      //当点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+      // 当点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
       this.getEditor().selection.getRange().select()
       return this.getEditor().selection.getText()
     },

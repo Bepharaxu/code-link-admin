@@ -24,7 +24,7 @@
         <a-form-item label="排序" :labelCol="labelCol" :wrapperCol="wrapperCol" extra="数字越小越靠前">
           <a-input-number
             :min="0"
-            v-decorator="['sort', { initialValue: 100, rules: [{ required: true, message: '请输入至少1个数字'  }] }]"
+            v-decorator="['sort', { initialValue: 100, rules: [{ required: true, message: '请输入至少1个数字' }] }]"
           />
         </a-form-item>
       </a-form>
@@ -53,7 +53,7 @@ export default {
       // modal(对话框)确定按钮 loading
       confirmLoading: false,
       // 当前表单元素
-      form: this.$form.createForm(this),
+      form: this.$form.createForm(this)
     }
   },
   methods: {

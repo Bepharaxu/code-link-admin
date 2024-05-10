@@ -48,7 +48,7 @@
                     { validator: validatorStepsConfig }
                   ],
                 },
-              ]"
+                ]"
               />
               <span class="ml-8">人</span>
               <a
@@ -226,7 +226,7 @@ export default {
       // 默认的阶梯人数配置
       stepsConfig,
       // 拼团类型
-      activeType: undefined,
+      activeType: undefined
     }
   },
   beforeCreate () {

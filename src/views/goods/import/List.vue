@@ -195,7 +195,7 @@ export default {
           this.handleRefresh(true)
         }
       })
-    },
+    }
 
   }
 }

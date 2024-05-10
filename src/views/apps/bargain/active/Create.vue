@@ -133,20 +133,20 @@
         <a-form-item label="分享标题" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-input
             placeholder="请输入分享标题"
-            v-decorator="['share_title', { 
-                initialValue: '麻烦帮我砍一刀！我真的很想要了，爱你哟！(๑′ᴗ‵๑)', 
-                rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] 
-              }]"
+            v-decorator="['share_title', {
+              initialValue: '麻烦帮我砍一刀！我真的很想要了，爱你哟！(๑′ᴗ‵๑)',
+              rules: [{ required: true, min: 2, message: '请输入至少2个字符' }]
+            }]"
           />
         </a-form-item>
 
         <a-form-item label="砍价助力语" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-input
             placeholder="请输入砍价助力语"
-            v-decorator="['prompt_words', { 
-                initialValue: '&quot;朋友一生一起走，帮砍一刀有没有&quot;', 
-                rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] 
-              }]"
+            v-decorator="['prompt_words', {
+              initialValue: '&quot;朋友一生一起走，帮砍一刀有没有&quot;',
+              rules: [{ required: true, min: 2, message: '请输入至少2个字符' }]
+            }]"
           />
         </a-form-item>
 

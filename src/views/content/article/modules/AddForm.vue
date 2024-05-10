@@ -11,58 +11,19 @@
   >
     <a-spin :spinning="confirmLoading">
       <a-form :form="form">
-        <a-form-item label="文章标题" :labelCol="labelCol" :wrapperCol="wrapperCol">
+        <a-form-item label="客户姓名" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-input
-            v-decorator="['title', { rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] }]"
+            v-decorator="['name', { rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] }]"
           />
         </a-form-item>
-        <a-form-item label="文章分类" :labelCol="labelCol" :wrapperCol="wrapperCol">
-          <a-select
-            v-decorator="['category_id', { rules: [{ required: true, message: '请选择1个商品分类' }] }]"
-          >
-            <a-select-option
-              v-for="(item, index) in categoryList"
-              :key="index"
-              :value="item.category_id"
-            >{{ item.name }}</a-select-option>
-          </a-select>
-        </a-form-item>
-        <a-form-item label="列表显示方式" :labelCol="labelCol" :wrapperCol="wrapperCol">
-          <a-radio-group v-decorator="['show_type', { initialValue: 10, rules: [{ required: true }] }]">
-            <a-radio :value="10">小图模式</a-radio>
-            <a-radio :value="20">大图模式</a-radio>
-          </a-radio-group>
-          <div class="form-item-help">
-            <p class="extra">小图模式建议封面图尺寸：300 * 188</p>
-            <p class="extra">大图模式建议封面图尺寸：750 * 455</p>
-          </div>
-        </a-form-item>
-        <a-form-item label="封面图" :labelCol="labelCol" :wrapperCol="wrapperCol">
-          <SelectImage
-            v-decorator="['image_id', { rules: [{ required: true, message: '请选择1个封面图' }] }]"
+        <a-form-item label="手机号" :labelCol="labelCol" :wrapperCol="wrapperCol">
+          <a-input
+            v-decorator="['phone', { rules: [{ required: false, min: 11, message: '请输入正确的手机号' }] }]"
           />
         </a-form-item>
-        <a-form-item label="文章内容" :labelCol="labelCol" :wrapperCol="wrapperCol">
-          <Ueditor v-decorator="['content', { rules: [{ required: true, message: '文章内容不能为空' }] }]" />
-        </a-form-item>
-        <a-form-item
-          label="虚拟阅读量"
-          :labelCol="labelCol"
-          :wrapperCol="wrapperCol"
-          extra="用户看到的阅读量 = 实际阅读量 + 虚拟阅读量"
-        >
-          <a-input-number :min="0" v-decorator="['virtual_views', { initialValue: 100 }]" />
-        </a-form-item>
-        <a-form-item label="状态" :labelCol="labelCol" :wrapperCol="wrapperCol" extra="用户端是否展示">
-          <a-radio-group v-decorator="['status', { initialValue: 1, rules: [{ required: true }] }]">
-            <a-radio :value="1">显示</a-radio>
-            <a-radio :value="0">隐藏</a-radio>
-          </a-radio-group>
-        </a-form-item>
-        <a-form-item label="排序" :labelCol="labelCol" :wrapperCol="wrapperCol" extra="数字越小越靠前">
-          <a-input-number
-            :min="0"
-            v-decorator="['sort', { initialValue: 100, rules: [{ required: true, message: '请输入至少1个数字' }] }]"
+        <a-form-item label="备注" :labelCol="labelCol" :wrapperCol="wrapperCol">
+          <a-input
+            v-decorator="['remark', { rules: [{ required: false, min: 2, message: '请输入至少2个字符' }] }]"
           />
         </a-form-item>
       </a-form>
@@ -135,10 +96,10 @@ export default {
     // 提交到后端api
     onFormSubmit (values) {
       this.confirmLoading = true
-      Api.add({ form: values })
+      Api.add(values)
         .then(result => {
            // 显示成功
-          this.$message.success(result.message, 1.5)
+          this.$message.success('保存成功', 1.5)
           // 关闭对话框事件
           this.handleCancel()
           // 通知父端组件提交完成了

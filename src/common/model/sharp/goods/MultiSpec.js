@@ -33,7 +33,7 @@ const defaultColumns = [
     dataIndex: 'seckill_stock',
     width: 150,
     scopedSlots: { customRender: 'seckill_stock' }
-  },
+  }
 ]
 
 // 默认的sku记录值
@@ -62,7 +62,7 @@ export default class MultiSpec {
    * @param {array} specList 规格列表
    * @param {array} skuList SKU列表
    */
-  constructor() {
+  constructor () {
     this.multiSpecData = {
       // 规格列表
       specList: [],
@@ -303,7 +303,7 @@ export default class MultiSpec {
   verifySkuList () {
     const columns = [
       { field: 'seckill_price', name: '秒杀价格' },
-      { field: 'seckill_stock', name: '秒杀库存' },
+      { field: 'seckill_stock', name: '秒杀库存' }
     ]
     const skuList = this.multiSpecData.skuList
     for (const skuIndex in skuList) {

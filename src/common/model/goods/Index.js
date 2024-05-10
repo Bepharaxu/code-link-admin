@@ -98,7 +98,7 @@ export default {
       'dealer_money_type', 'first_money', 'second_money', 'third_money'
     ])
     return {
-      ...goodsFormData,
+      ...goodsFormData
     }
   },
 

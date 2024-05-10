@@ -96,619 +96,619 @@ export default {
         // Api.defaultData()
         //   .then(result => {
             this.defaultData = {
-        "page": {
-            "params": {
-                "name": "页面名称",
-                "title": "页面标题",
-                "shareTitle": "分享标题"
+        'page': {
+            'params': {
+                'name': '页面名称',
+                'title': '页面标题',
+                'shareTitle': '分享标题'
             },
-            "style": {
-                "titleTextColor": "black",
-                "titleBackgroundColor": "#ffffff"
+            'style': {
+                'titleTextColor': 'black',
+                'titleBackgroundColor': '#ffffff'
             }
         },
-        "items": {
-            "search": {
-                "name": "搜索框",
-                "type": "search",
-                "params": {
-                    "placeholder": "请输入关键字进行搜索"
+        'items': {
+            'search': {
+                'name': '搜索框',
+                'type': 'search',
+                'params': {
+                    'placeholder': '请输入关键字进行搜索'
                 },
-                "style": {
-                    "textAlign": "left",
-                    "searchStyle": "square"
+                'style': {
+                    'textAlign': 'left',
+                    'searchStyle': 'square'
                 }
             },
-            "banner": {
-                "name": "图片轮播",
-                "type": "banner",
-                "style": {
-                    "btnColor": "#ffffff",
-                    "btnShape": "round",
-                    "interval": 2.5
+            'banner': {
+                'name': '图片轮播',
+                'type': 'banner',
+                'style': {
+                    'btnColor': '#ffffff',
+                    'btnShape': 'round',
+                    'interval': 2.5
                 },
-                "data": [
+                'data': [
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png',
+                        'link': null
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png',
+                        'link': null
                     }
                 ]
             },
-            "image": {
-                "name": "图片",
-                "type": "image",
-                "style": {
-                    "paddingTop": 0,
-                    "paddingLeft": 0,
-                    "background": "#ffffff"
+            'image': {
+                'name': '图片',
+                'type': 'image',
+                'style': {
+                    'paddingTop': 0,
+                    'paddingLeft': 0,
+                    'background': '#ffffff'
                 },
-                "data": [
+                'data': [
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png",
-                        "imgName": "image-1.jpg",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png',
+                        'imgName': 'image-1.jpg',
+                        'link': null
                     }
                 ]
             },
-            "navBar": {
-                "name": "导航组",
-                "type": "navBar",
-                "style": {
-                    "rowsNum": 4,
-                    "background": "#ffffff",
-                    "paddingTop": 0,
-                    "textColor": "#666666"
+            'navBar': {
+                'name': '导航组',
+                'type': 'navBar',
+                'style': {
+                    'rowsNum': 4,
+                    'background': '#ffffff',
+                    'paddingTop': 0,
+                    'textColor': '#666666'
                 },
-                "data": [
+                'data': [
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png",
-                        "imgName": "icon-1.png",
-                        "link": null,
-                        "text": "按钮文字1"
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png',
+                        'imgName': 'icon-1.png',
+                        'link': null,
+                        'text': '按钮文字1'
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png",
-                        "imgName": "icon-2.jpg",
-                        "link": null,
-                        "text": "按钮文字2"
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png',
+                        'imgName': 'icon-2.jpg',
+                        'link': null,
+                        'text': '按钮文字2'
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png",
-                        "imgName": "icon-3.jpg",
-                        "link": null,
-                        "text": "按钮文字3"
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png',
+                        'imgName': 'icon-3.jpg',
+                        'link': null,
+                        'text': '按钮文字3'
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png",
-                        "imgName": "icon-4.jpg",
-                        "link": null,
-                        "text": "按钮文字4"
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/navbar\/01.png',
+                        'imgName': 'icon-4.jpg',
+                        'link': null,
+                        'text': '按钮文字4'
                     }
                 ]
             },
-            "blank": {
-                "name": "辅助空白",
-                "type": "blank",
-                "style": {
-                    "height": 20,
-                    "background": "#ffffff"
+            'blank': {
+                'name': '辅助空白',
+                'type': 'blank',
+                'style': {
+                    'height': 20,
+                    'background': '#ffffff'
                 }
             },
-            "guide": {
-                "name": "辅助线",
-                "type": "guide",
-                "style": {
-                    "background": "#ffffff",
-                    "lineStyle": "solid",
-                    "lineHeight": 1,
-                    "lineColor": "#000000",
-                    "paddingTop": 10
+            'guide': {
+                'name': '辅助线',
+                'type': 'guide',
+                'style': {
+                    'background': '#ffffff',
+                    'lineStyle': 'solid',
+                    'lineHeight': 1,
+                    'lineColor': '#000000',
+                    'paddingTop': 10
                 }
             },
-            "video": {
-                "name": "视频组",
-                "type": "video",
-                "params": {
-                    "videoUrl": "http:\/\/wxsnsdy.tc.qq.com\/105\/20210\/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400.mp4",
-                    "poster": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/video_poster.png",
-                    "autoplay": 0
+            'video': {
+                'name': '视频组',
+                'type': 'video',
+                'params': {
+                    'videoUrl': 'http:\/\/wxsnsdy.tc.qq.com\/105\/20210\/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400.mp4',
+                    'poster': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/video_poster.png',
+                    'autoplay': 0
                 },
-                "style": {
-                    "paddingTop": 0,
-                    "height": 190
+                'style': {
+                    'paddingTop': 0,
+                    'height': 190
                 }
             },
-            "article": {
-                "name": "文章组",
-                "type": "article",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "category": -1,
-                        "showNum": 6
+            'article': {
+                'name': '文章组',
+                'type': 'article',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'category': -1,
+                        'showNum': 6
                     }
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "title": "此处显示文章标题",
-                        "show_type": 10,
-                        "image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/article\/01.png",
-                        "views_num": 309
+                        'title': '此处显示文章标题',
+                        'show_type': 10,
+                        'image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/article\/01.png',
+                        'views_num': 309
                     },
                     {
-                        "title": "此处显示文章标题",
-                        "show_type": 10,
-                        "image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/article\/01.png",
-                        "views_num": 309
+                        'title': '此处显示文章标题',
+                        'show_type': 10,
+                        'image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/article\/01.png',
+                        'views_num': 309
                     }
                 ],
-                "data": []
+                'data': []
             },
-            "notice": {
-                "name": "店铺公告",
-                "type": "notice",
-                "params": {
-                    "text": "这里是第一条自定义公告的标题",
-                    "link": null,
-                    "showIcon": true,
-                    "scrollable": true
+            'notice': {
+                'name': '店铺公告',
+                'type': 'notice',
+                'params': {
+                    'text': '这里是第一条自定义公告的标题',
+                    'link': null,
+                    'showIcon': true,
+                    'scrollable': true
                 },
-                "style": {
-                    "paddingTop": 0,
-                    "background": "#fffbe8",
-                    "textColor": "#de8c17"
+                'style': {
+                    'paddingTop': 0,
+                    'background': '#fffbe8',
+                    'textColor': '#de8c17'
                 }
             },
-            "richText": {
-                "name": "富文本",
-                "type": "richText",
-                "params": {
-                    "content": "<p>这里是文本的内容<\/p>"
+            'richText': {
+                'name': '富文本',
+                'type': 'richText',
+                'params': {
+                    'content': '<p>这里是文本的内容<\/p>'
                 },
-                "style": {
-                    "paddingTop": 0,
-                    "paddingLeft": 0,
-                    "background": "#ffffff"
+                'style': {
+                    'paddingTop': 0,
+                    'paddingLeft': 0,
+                    'background': '#ffffff'
                 }
             },
-            "window": {
-                "name": "图片橱窗",
-                "type": "window",
-                "style": {
-                    "paddingTop": 0,
-                    "paddingLeft": 0,
-                    "background": "#ffffff",
-                    "layout": 2
+            'window': {
+                'name': '图片橱窗',
+                'type': 'window',
+                'style': {
+                    'paddingTop': 0,
+                    'paddingLeft': 0,
+                    'background': '#ffffff',
+                    'layout': 2
                 },
-                "data": [
+                'data': [
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/01.jpg",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/01.jpg',
+                        'link': null
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/02.jpg",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/02.jpg',
+                        'link': null
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/03.jpg",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/03.jpg',
+                        'link': null
                     },
                     {
-                        "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/04.jpg",
-                        "link": null
+                        'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/window\/04.jpg',
+                        'link': null
                     }
                 ],
-                "dataNum": 4
+                'dataNum': 4
             },
-            "hotZone": {
-                "name": "热区",
-                "type": "hotZone",
-                "style": {
-                    "paddingTop": 0,
-                    "paddingLeft": 0,
-                    "background": "#ffffff"
+            'hotZone': {
+                'name': '热区',
+                'type': 'hotZone',
+                'style': {
+                    'paddingTop': 0,
+                    'paddingLeft': 0,
+                    'background': '#ffffff'
                 },
-                "data": {
-                    "imgUrl": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png",
-                    "imgName": "image-1.jpg",
-                    "maps": [
+                'data': {
+                    'imgUrl': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/banner\/01.png',
+                    'imgName': 'image-1.jpg',
+                    'maps': [
                         {
-                            "width": 300,
-                            "height": 100,
-                            "left": 0,
-                            "top": 0,
-                            "link": null,
-                            "key": 1
+                            'width': 300,
+                            'height': 100,
+                            'left': 0,
+                            'top': 0,
+                            'link': null,
+                            'key': 1
                         }
                     ]
                 }
             },
-            "goods": {
-                "name": "商品组",
-                "type": "goods",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "category": 0,
-                        "goodsSort": "all",
-                        "showNum": 6
+            'goods': {
+                'name': '商品组',
+                'type': 'goods',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'category': 0,
+                        'goodsSort': 'all',
+                        'showNum': 6
                     }
                 },
-                "style": {
-                    "background": "#F6F6F6",
-                    "display": "list",
-                    "column": 2,
-                    "show": [
-                        "goodsName",
-                        "goodsPrice",
-                        "linePrice",
-                        "sellingPoint",
-                        "goodsSales"
+                'style': {
+                    'background': '#F6F6F6',
+                    'display': 'list',
+                    'column': 2,
+                    'show': [
+                        'goodsName',
+                        'goodsPrice',
+                        'linePrice',
+                        'sellingPoint',
+                        'goodsSales'
                     ]
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     },
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     },
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     },
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     }
                 ],
-                "data": [
+                'data': [
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     },
                     {
-                        "goods_name": "此处显示商品名称",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "goods_price_min": "99.00",
-                        "line_price_min": "139.00",
-                        "selling_point": "此款商品美观大方 不容错过",
-                        "goods_sales": 100
+                        'goods_name': '此处显示商品名称',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'goods_price_min': '99.00',
+                        'line_price_min': '139.00',
+                        'selling_point': '此款商品美观大方 不容错过',
+                        'goods_sales': 100
                     }
                 ]
             },
-            "service": {
-                "name": "在线客服",
-                "type": "service",
-                "params": {
-                    "type": "chat",
-                    "image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/service.png",
-                    "tel": ""
+            'service': {
+                'name': '在线客服',
+                'type': 'service',
+                'params': {
+                    'type': 'chat',
+                    'image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/service.png',
+                    'tel': ''
                 },
-                "style": {
-                    "right": 1,
-                    "bottom": 10,
-                    "opacity": 100
+                'style': {
+                    'right': 1,
+                    'bottom': 10,
+                    'opacity': 100
                 }
             },
-            "officialAccount": {
-                "name": "关注公众号",
-                "type": "officialAccount",
-                "params": [],
-                "style": []
+            'officialAccount': {
+                'name': '关注公众号',
+                'type': 'officialAccount',
+                'params': [],
+                'style': []
             },
-            "shop": {
-                "name": "线下门店",
-                "type": "shop",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "showNum": 6
+            'shop': {
+                'name': '线下门店',
+                'type': 'shop',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'showNum': 6
                     }
                 },
-                "style": {
-                    "show": [
-                        "logo",
-                        "address",
-                        "phone"
+                'style': {
+                    'show': [
+                        'logo',
+                        'address',
+                        'phone'
                     ],
-                    "background": "#ffffff"
+                    'background': '#ffffff'
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "shop_name": "此处显示门店名称",
-                        "logo_url": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png",
-                        "phone": "010-6666666",
-                        "region": {
-                            "province": "xxx省",
-                            "city": "xxx市",
-                            "region": "xxx区"
+                        'shop_name': '此处显示门店名称',
+                        'logo_url': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png',
+                        'phone': '010-6666666',
+                        'region': {
+                            'province': 'xxx省',
+                            'city': 'xxx市',
+                            'region': 'xxx区'
                         },
-                        "address": "xxx街道"
+                        'address': 'xxx街道'
                     },
                     {
-                        "shop_name": "此处显示门店名称",
-                        "logo_url": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png",
-                        "phone": "010-6666666",
-                        "region": {
-                            "province": "xxx省",
-                            "city": "xxx市",
-                            "region": "xxx区"
+                        'shop_name': '此处显示门店名称',
+                        'logo_url': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png',
+                        'phone': '010-6666666',
+                        'region': {
+                            'province': 'xxx省',
+                            'city': 'xxx市',
+                            'region': 'xxx区'
                         },
-                        "address": "xxx街道"
+                        'address': 'xxx街道'
                     }
                 ],
-                "data": [
+                'data': [
                     {
-                        "shop_name": "此处显示门店名称",
-                        "logo_url": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png",
-                        "phone": "010-6666666",
-                        "region": {
-                            "province": "xxx省",
-                            "city": "xxx市",
-                            "region": "xxx区"
+                        'shop_name': '此处显示门店名称',
+                        'logo_url': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/circular.png',
+                        'phone': '010-6666666',
+                        'region': {
+                            'province': 'xxx省',
+                            'city': 'xxx市',
+                            'region': 'xxx区'
                         },
-                        "address": "xxx街道"
+                        'address': 'xxx街道'
                     }
                 ]
             },
-            "bargain": {
-                "name": "砍价商品组",
-                "type": "bargain",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "goodsSort": "all",
-                        "showNum": 6
+            'bargain': {
+                'name': '砍价商品组',
+                'type': 'bargain',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'goodsSort': 'all',
+                        'showNum': 6
                     }
                 },
-                "style": {
-                    "background": "#F6F6F6",
-                    "show": [
-                        "goodsName",
-                        "peoples",
-                        "floorPrice",
-                        "originalPrice"
+                'style': {
+                    'background': '#F6F6F6',
+                    'show': [
+                        'goodsName',
+                        'peoples',
+                        'floorPrice',
+                        'originalPrice'
                     ]
                 },
-                "demo": {
-                    "helpsCount": 2,
-                    "helpList": [
+                'demo': {
+                    'helpsCount': 2,
+                    'helpList': [
                         {
-                            "user": {
-                                "avatar_url": "http:\/\/tva1.sinaimg.cn\/large\/0060lm7Tly1g4c7zrytvvj30dw0dwwes.jpg"
+                            'user': {
+                                'avatar_url': 'http:\/\/tva1.sinaimg.cn\/large\/0060lm7Tly1g4c7zrytvvj30dw0dwwes.jpg'
                             }
                         },
                         {
-                            "user": {
-                                "avatar_url": "http:\/\/tva1.sinaimg.cn\/large\/0060lm7Tly1g4c7zs2u5ej30b40b4dfx.jpg"
+                            'user': {
+                                'avatar_url': 'http:\/\/tva1.sinaimg.cn\/large\/0060lm7Tly1g4c7zs2u5ej30b40b4dfx.jpg'
                             }
                         }
                     ]
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "goods_name": "此处是砍价商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "floor_price": "0.01",
-                        "original_price": "139.00"
+                        'goods_name': '此处是砍价商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'floor_price': '0.01',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是砍价商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "floor_price": "0.01",
-                        "original_price": "139.00"
+                        'goods_name': '此处是砍价商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'floor_price': '0.01',
+                        'original_price': '139.00'
                     }
                 ],
-                "data": [
+                'data': [
                     {
-                        "goods_name": "此处是砍价商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "floor_price": "0.01",
-                        "original_price": "139.00"
+                        'goods_name': '此处是砍价商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'floor_price': '0.01',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是砍价商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "floor_price": "0.01",
-                        "original_price": "139.00"
+                        'goods_name': '此处是砍价商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'floor_price': '0.01',
+                        'original_price': '139.00'
                     }
                 ]
             },
-            "sharp": {
-                "name": "整点秒杀",
-                "type": "sharp",
-                "params": {
-                    "showNum": 6
+            'sharp': {
+                'name': '整点秒杀',
+                'type': 'sharp',
+                'params': {
+                    'showNum': 6
                 },
-                "style": {
-                    "background": "#ffffff",
-                    "column": 3,
-                    "show": [
-                        "goodsName",
-                        "seckillPrice",
-                        "originalPrice"
+                'style': {
+                    'background': '#ffffff',
+                    'column': 3,
+                    'show': [
+                        'goodsName',
+                        'seckillPrice',
+                        'originalPrice'
                     ]
                 },
-                "data": [
+                'data': [
                     {
-                        "goods_name": "此处是秒杀商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "seckill_price_min": "69.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是秒杀商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'seckill_price_min': '69.00',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是秒杀商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "seckill_price_min": "69.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是秒杀商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'seckill_price_min': '69.00',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是秒杀商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "seckill_price_min": "69.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是秒杀商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'seckill_price_min': '69.00',
+                        'original_price': '139.00'
                     }
                 ]
             },
-            "groupon": {
-                "name": "拼团商品组",
-                "type": "groupon",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "goodsSort": "all",
-                        "showNum": 6
+            'groupon': {
+                'name': '拼团商品组',
+                'type': 'groupon',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'goodsSort': 'all',
+                        'showNum': 6
                     }
                 },
-                "style": {
-                    "background": "#F5F5F8",
-                    "paddingY": 12,
-                    "paddingX": 12,
-                    "display": "card",
-                    "itemBorderRadius": "round",
-                    "itemMargin": 10,
-                    "show": [
-                        "goodsName",
-                        "button",
-                        "peoples",
-                        "activeSales",
-                        "grouponPrice",
-                        "originalPrice"
+                'style': {
+                    'background': '#F5F5F8',
+                    'paddingY': 12,
+                    'paddingX': 12,
+                    'display': 'card',
+                    'itemBorderRadius': 'round',
+                    'itemMargin': 10,
+                    'show': [
+                        'goodsName',
+                        'button',
+                        'peoples',
+                        'activeSales',
+                        'grouponPrice',
+                        'originalPrice'
                     ]
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "goods_name": "此处是拼团商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "show_people": "3",
-                        "active_sales": "120",
-                        "groupon_price": "99.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是拼团商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'show_people': '3',
+                        'active_sales': '120',
+                        'groupon_price': '99.00',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是拼团商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "show_people": "3",
-                        "active_sales": "120",
-                        "groupon_price": "99.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是拼团商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'show_people': '3',
+                        'active_sales': '120',
+                        'groupon_price': '99.00',
+                        'original_price': '139.00'
                     }
                 ],
-                "data": [
+                'data': [
                     {
-                        "goods_name": "此处是拼团商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "show_people": "3",
-                        "active_sales": "120",
-                        "groupon_price": "99.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是拼团商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'show_people': '3',
+                        'active_sales': '120',
+                        'groupon_price': '99.00',
+                        'original_price': '139.00'
                     },
                     {
-                        "goods_name": "此处是拼团商品",
-                        "goods_image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png",
-                        "show_people": "3",
-                        "active_sales": "120",
-                        "groupon_price": "99.00",
-                        "original_price": "139.00"
+                        'goods_name': '此处是拼团商品',
+                        'goods_image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/goods\/01.png',
+                        'show_people': '3',
+                        'active_sales': '120',
+                        'groupon_price': '99.00',
+                        'original_price': '139.00'
                     }
                 ]
             },
-            "coupon": {
-                "name": "优惠券组",
-                "type": "coupon",
-                "style": {
-                    "paddingTop": 10,
-                    "background": "#ffffff",
-                    "marginRight": 20,
-                    "couponBgColor": "#ffa708",
-                    "receiveBgColor": "#717070"
+            'coupon': {
+                'name': '优惠券组',
+                'type': 'coupon',
+                'style': {
+                    'paddingTop': 10,
+                    'background': '#ffffff',
+                    'marginRight': 20,
+                    'couponBgColor': '#ffa708',
+                    'receiveBgColor': '#717070'
                 },
-                "params": {
-                    "showNum": 5
+                'params': {
+                    'showNum': 5
                 },
-                "data": [
+                'data': [
                     {
-                        "reduce_price": "10",
-                        "min_price": "100.00"
+                        'reduce_price': '10',
+                        'min_price': '100.00'
                     },
                     {
-                        "reduce_price": "10",
-                        "min_price": "100.00"
+                        'reduce_price': '10',
+                        'min_price': '100.00'
                     },
                     {
-                        "reduce_price": "10",
-                        "min_price": "100.00"
+                        'reduce_price': '10',
+                        'min_price': '100.00'
                     }
                 ]
             },
-            "special": {
-                "name": "头条快报",
-                "type": "special",
-                "params": {
-                    "source": "auto",
-                    "auto": {
-                        "category": -1,
-                        "showNum": 6
+            'special': {
+                'name': '头条快报',
+                'type': 'special',
+                'params': {
+                    'source': 'auto',
+                    'auto': {
+                        'category': -1,
+                        'showNum': 6
                     },
-                    "display": 1,
-                    "image": "https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/special.png"
+                    'display': 1,
+                    'image': 'https:\/\/pro2.yiovo.com\/assets\/store\/img\/diy\/special.png'
                 },
-                "style": {
-                    "background": "#ffffff",
-                    "textColor": "#141414",
-                    "paddingTop": 0
+                'style': {
+                    'background': '#ffffff',
+                    'textColor': '#141414',
+                    'paddingTop': 0
                 },
-                "defaultData": [
+                'defaultData': [
                     {
-                        "title": "张小龙4小时演讲：你和高手之间，隔着“简单”二字"
+                        'title': '张小龙4小时演讲：你和高手之间，隔着“简单”二字'
                     },
                     {
-                        "title": "张小龙4小时演讲：你和高手之间，隔着“简单”二字"
+                        'title': '张小龙4小时演讲：你和高手之间，隔着“简单”二字'
                     }
                 ],
-                "data": []
+                'data': []
             },
-            "ICPLicense": {
-                "name": "备案号",
-                "type": "ICPLicense",
-                "params": {
-                    "text": "网站备案号：粤ICP备10000000号-1",
-                    "link": "https:\/\/beian.miit.gov.cn\/"
+            'ICPLicense': {
+                'name': '备案号',
+                'type': 'ICPLicense',
+                'params': {
+                    'text': '网站备案号：粤ICP备10000000号-1',
+                    'link': 'https:\/\/beian.miit.gov.cn\/'
                 },
-                "style": {
-                    "fontSize": "13",
-                    "textAlign": "center",
-                    "textColor": "#696969",
-                    "paddingTop": 6,
-                    "paddingLeft": 0,
-                    "background": "#ffffff"
+                'style': {
+                    'fontSize': '13',
+                    'textAlign': 'center',
+                    'textColor': '#696969',
+                    'paddingTop': 6,
+                    'paddingLeft': 0,
+                    'background': '#ffffff'
                 }
             }
         }

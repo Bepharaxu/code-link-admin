@@ -232,8 +232,8 @@ export const asyncRouterMap = [
             path: '/goods/import/batch',
             component: () => import(/* webpackChunkName: "goods" */ '@/views/goods/import/Batch'),
             meta: { title: '商品导入', pageTitle: '商品批量导入', keepAlive: false, permission: ['/goods/import'] },
-            hidden: true,
-          },
+            hidden: true
+          }
         ]
       },
 
@@ -329,7 +329,7 @@ export const asyncRouterMap = [
                 hidden: true
               }
             ]
-          },
+          }
         ]
       },
 
@@ -421,7 +421,7 @@ export const asyncRouterMap = [
             path: '/content/help/index',
             component: () => import(/* webpackChunkName: "content" */ '@/views/content/help/Index'),
             meta: { title: '帮助中心', keepAlive: false, permission: ['/content/help/index'] },
-            moduleKey: 'content-help',
+            moduleKey: 'content-help'
           }
         ]
       },
@@ -521,7 +521,7 @@ export const asyncRouterMap = [
             component: () => import(/* webpackChunkName: "market" */ '@/views/market/FullFree'),
             meta: { title: '满额包邮', keepAlive: false, permission: ['/market/full-free'] },
             moduleKey: 'market-fullFree'
-          },
+          }
         ]
       },
 
@@ -613,7 +613,7 @@ export const asyncRouterMap = [
                 meta: { title: '客服设置', keepAlive: false, permission: ['/client/mp/alipay/customer'] }
               }
             ]
-          },
+          }
         ]
       },
 
@@ -886,7 +886,7 @@ export const asyncRouterMap = [
                 meta: { title: '接口配置', keepAlive: false, permission: ['/apps/collector/setting'] }
               }
             ]
-          },
+          }
         ]
       },
 
@@ -907,13 +907,13 @@ export const asyncRouterMap = [
             path: '/setting/customer',
             component: () => import(/* webpackChunkName: "setting" */ '@/views/setting/Customer'),
             meta: { title: '客服设置', keepAlive: false, permission: ['/setting/customer'] },
-            moduleKey: 'setting-customer',
+            moduleKey: 'setting-customer'
           },
           {
             path: '/setting/storage',
             component: () => import(/* webpackChunkName: "setting" */ '@/views/setting/Storage'),
             meta: { title: '上传设置', keepAlive: false, permission: ['/setting/storage'] },
-            moduleKey: 'setting-storage',
+            moduleKey: 'setting-storage'
           },
           {
             path: '/setting/sms',
@@ -988,7 +988,7 @@ export const asyncRouterMap = [
                 component: () => import(/* webpackChunkName: "setting" */ '@/views/setting/payment/template/Update'),
                 meta: { title: '编辑支付模板', keepAlive: false, permission: ['/setting/payment/template/update'] },
                 hidden: true
-              },
+              }
               // {
               //   path: '/setting/payment/mchpay',
               //   component: () => import(/* webpackChunkName: "setting" */ '@/views/setting/payment/Mchpay'),

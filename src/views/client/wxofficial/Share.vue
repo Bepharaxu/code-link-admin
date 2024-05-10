@@ -83,7 +83,7 @@ export default {
       // 当前表单元素
       form: this.$form.createForm(this),
       // 当前记录详情
-      record: {},
+      record: {}
     }
   },
   // 初始化数据

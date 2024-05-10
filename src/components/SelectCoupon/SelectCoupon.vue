@@ -67,7 +67,7 @@ const columns = [
   {
     title: '优惠券ID',
     dataIndex: 'coupon_id',
-     width: '12%',
+     width: '12%'
   },
   {
     title: '优惠券名称',

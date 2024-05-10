@@ -370,8 +370,8 @@
                       addonAfter="折"
                       :inputProps="{ min: 0, max: 9.9 }"
                       v-decorator="[`alone_grade_equity[grade_id:${item.grade_id}]`, {
-                      initialValue: formData.defaultUserGradeValue[item.grade_id], rules: [{ required: true, message: '折扣率不能为空'}]
-                    }]"
+                        initialValue: formData.defaultUserGradeValue[item.grade_id], rules: [{ required: true, message: '折扣率不能为空'}]
+                      }]"
                     />
                   </a-form-item>
                 </div>

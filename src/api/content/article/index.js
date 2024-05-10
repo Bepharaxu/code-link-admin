@@ -2,11 +2,11 @@ import { axios } from '@/utils/request'
 
 // api接口列表
 const api = {
-  list: '/content.article/list',
+  list: '/customer',
   detail: '/content.article/detail',
-  add: '/content.article/add',
-  edit: '/content.article/edit',
-  delete: '/content.article/delete'
+  add: '/customer',
+  edit: '/customer',
+  delete: '/customer'
 }
 
 // 列表记录
@@ -57,8 +57,8 @@ export function edit (data) {
  */
 export function deleted (data) {
   return axios({
-    url: api.delete,
-    method: 'post',
+    url: api.delete + `/${data}`,
+    method: 'delete',
     data: data
   })
 }

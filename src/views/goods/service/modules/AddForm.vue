@@ -67,7 +67,7 @@ export default {
       // modal(对话框)确定按钮 loading
       confirmLoading: false,
       // 当前表单元素
-      form: this.$form.createForm(this),
+      form: this.$form.createForm(this)
     }
   },
   methods: {

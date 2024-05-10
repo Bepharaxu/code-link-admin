@@ -45,7 +45,7 @@ import { STable } from '@/components/Table'
 export default {
   name: 'Index',
   components: {
-    STable,
+    STable
   },
   data () {
     return {

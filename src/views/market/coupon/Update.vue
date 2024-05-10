@@ -18,7 +18,7 @@
           </a-radio-group>
         </a-form-item>
         <a-form-item
-          v-show="form.getFieldValue('coupon_type') ==  CouponTypeEnum.FULL_DISCOUNT.value"
+          v-show="form.getFieldValue('coupon_type') == CouponTypeEnum.FULL_DISCOUNT.value"
           label="减免金额"
           :labelCol="labelCol"
           :wrapperCol="wrapperCol"

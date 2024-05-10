@@ -104,7 +104,7 @@ export default {
             .finally(result => app.confirmLoading = false)
         }
       })
-    },
+    }
 
   }
 }

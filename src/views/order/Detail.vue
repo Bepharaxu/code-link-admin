@@ -143,7 +143,7 @@
           <a-descriptions-item label="商家备注">
             <span>{{ record.merchant_remark ? record.merchant_remark :'-' }}</span>
           </a-descriptions-item>
-            <a-descriptions-item v-if="record.trade" label="第三方支付订单号">
+          <a-descriptions-item v-if="record.trade" label="第三方支付订单号">
             <span>{{ record.trade ? record.trade.out_trade_no :'-' }}</span>
           </a-descriptions-item>
           <a-descriptions-item v-if="record.trade" label="支付流水号">
@@ -337,10 +337,10 @@
           <!-- 核销信息 -->
           <template
             v-if="(
-            record.pay_status == PayStatusEnum.SUCCESS.value
-              && record.delivery_status == DeliveryStatusEnum.DELIVERED.value
-              && !inArray(record.order_status ,[OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
-          )"
+              record.pay_status == PayStatusEnum.SUCCESS.value
+                && record.delivery_status == DeliveryStatusEnum.DELIVERED.value
+                && !inArray(record.order_status ,[OrderStatusEnum.CANCELLED.value, OrderStatusEnum.APPLY_CANCEL.value])
+            )"
           >
             <a-divider class="o-divider" />
             <a-descriptions title="核销信息">
@@ -565,7 +565,7 @@ export default {
     handleMerchantRemark () {
       const { record } = this
       this.$refs.RemarkForm.show(record)
-    },
+    }
 
   }
 }

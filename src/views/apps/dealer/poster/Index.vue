@@ -108,9 +108,9 @@ export default {
       // 海报图默认数据(后台api会覆盖此处数值)
       record: {
         backdrop: { src: '' },
-        nickName: { "fontSize": "14", "color": "#000000", "left": "199", "top": "524" },
-        avatar: { "width": "60", "style": "circle", "left": "127", "top": "502", src: '' },
-        qrcode: { "width": "100", "style": "circle", "left": "17", "top": "480", src: '' }
+        nickName: { 'fontSize': '14', 'color': '#000000', 'left': '199', 'top': '524' },
+        avatar: { 'width': '60', 'style': 'circle', 'left': '127', 'top': '502', src: '' },
+        qrcode: { 'width': '100', 'style': 'circle', 'left': '17', 'top': '480', src: '' }
       }
     }
   },
@@ -143,12 +143,12 @@ export default {
       */
     dragEvent (ele) {
       const app = this
-        , $preview = app.$refs.preview
-        , $ele = app.$refs[ele]
-        , l = 0
-        , t = 0
-        , r = $preview.offsetWidth - $ele.offsetWidth
-        , b = $preview.offsetHeight - $ele.offsetHeight
+         const $preview = app.$refs.preview
+         const $ele = app.$refs[ele]
+         const l = 0
+         const t = 0
+         const r = $preview.offsetWidth - $ele.offsetWidth
+         const b = $preview.offsetHeight - $ele.offsetHeight
 
       $ele.onmousedown = ev => {
         const sentX = ev.clientX - $ele.offsetLeft
@@ -197,7 +197,7 @@ export default {
           this.$message.success(result.message, 1.5)
         })
         .finally(() => this.confirmLoading = false)
-    },
+    }
 
   }
 }

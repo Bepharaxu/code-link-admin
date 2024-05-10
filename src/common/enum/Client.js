@@ -9,5 +9,5 @@ export default new Enum([
   { key: 'H5', name: 'H5端', value: 'H5' },
   { key: 'WXOFFICIAL', name: '微信公众号端', value: 'WXOFFICIAL' },
   { key: 'MP_WEIXIN', name: '微信小程序端', value: 'MP-WEIXIN' },
-  { key: 'MP_ALIPAY', name: '支付宝小程序端', value: 'MP-ALIPAY' },
+  { key: 'MP_ALIPAY', name: '支付宝小程序端', value: 'MP-ALIPAY' }
 ])

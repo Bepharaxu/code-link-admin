@@ -105,7 +105,7 @@ export default {
       // 当前表单元素
       form: this.$form.createForm(this),
       // 物流公司列表
-      expressList: [],
+      expressList: []
     }
   },
   async created () {

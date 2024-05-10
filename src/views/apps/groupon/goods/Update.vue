@@ -7,11 +7,11 @@
           <GoodsItem
             v-if="goods"
             :data="{
-            image: goods.goods_image,
-            imageAlt: '商品图片',
-            title: goods.goods_name,
-            subtitle: `¥${goods.goods_price_min}`
-          }"
+              image: goods.goods_image,
+              imageAlt: '商品图片',
+              title: goods.goods_name,
+              subtitle: `¥${goods.goods_price_min}`
+            }"
             :subTitleColor="true"
           />
         </a-form-item>
@@ -80,7 +80,7 @@
                     { validator: validatorStepsConfig }
                   ],
                 },
-              ]"
+                ]"
               />
               <span class="ml-8">人</span>
               <a
@@ -121,7 +121,7 @@
         </div>
 
         <!-- 单规格的表单内容 -->
-        <div v-if="record.spec_type == 10 &&  goods && record">
+        <div v-if="record.spec_type == 10 && goods && record">
           <a-form-item label="拼团价格" :labelCol="labelCol" :wrapperCol="wrapperCol" required>
             <div v-if="record.active_type == ActiveTypeEnum.STEPS.value">
               <a-form-item
@@ -134,12 +134,12 @@
                   :min="0.01"
                   :precision="2"
                   v-decorator="[`steps_price_config[${index}]`, {
-                      validateTrigger: ['blur'],
-                      rules: [
-                        { required: true, message: '拼团价格不能为空' },
-                        { validator: validatorStepsPrice }
-                      ],
-                    },
+                    validateTrigger: ['blur'],
+                    rules: [
+                      { required: true, message: '拼团价格不能为空' },
+                      { validator: validatorStepsPrice }
+                    ],
+                  },
                   ]"
                 />
                 <span class="ml-8">元</span>
@@ -308,7 +308,7 @@ export default {
       // 拼团商品详情
       record: {},
       // 主商品信息
-      goods: null,
+      goods: null
 
     }
   },

@@ -47,7 +47,7 @@ export default {
   },
   methods: {
 
-    // 更新已选择的数据 
+    // 更新已选择的数据
     onUpdate (maps) {
       this.maps = maps
       this.$emit('change', maps)
@@ -57,7 +57,7 @@ export default {
     handleSelectLink () {
       const { maps, image } = this
       this.$refs.HotZoneModal.handle(maps, image)
-    },
+    }
 
   }
 }

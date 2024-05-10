@@ -24,7 +24,7 @@ const PlatformName = {
   'WXOFFICIAL': '微信公众号',
   'H5': 'H5',
   'APP': 'APP',
-  'MP-ALIPAY': '支付宝小程序',
+  'MP-ALIPAY': '支付宝小程序'
 }
 
 // 注册来源图标
@@ -33,7 +33,7 @@ const PlatformIcons = {
   'WXOFFICIAL': h5Weixin,
   'H5': h5,
   'APP': app,
-  'MP-ALIPAY': mpAlipay,
+  'MP-ALIPAY': mpAlipay
 }
 
 export default {
