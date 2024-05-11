@@ -2,18 +2,17 @@ import { axios } from '@/utils/request'
 
 // api接口列表
 const api = {
-  list: '/customer',
-  add: '/content.article.category/add',
-  edit: '/content.article.category/edit',
-  delete: '/content.article.category/delete'
+  list: '/project',
+  add: '/project',
+  edit: '/project',
+  delete: '/project'
 }
 
 // 列表记录
 export function list (params) {
   return axios({
-    url: api.list,
-    method: 'get',
-    params
+    url: api.list + `/${params}`,
+    method: 'get'
   })
 }
 
@@ -35,8 +34,8 @@ export function add (data) {
  */
 export function edit (data) {
   return axios({
-    url: api.edit,
-    method: 'post',
+    url: api.edit + `/${data.id}`,
+    method: 'patch',
     data
   })
 }
@@ -47,8 +46,22 @@ export function edit (data) {
  */
 export function deleted (data) {
   return axios({
-    url: api.delete,
-    method: 'post',
-    data: data
+    url: api.delete + `/${data}`,
+    method: 'delete'
+  })
+}
+
+export function detail (data) {
+  return axios({
+    url: api.delete + `/${data}`,
+    method: 'get'
+  })
+}
+
+export function updateContent (data) {
+  return axios({
+    url: api.edit + `/${data.id}`,
+    method: 'patch',
+    data
   })
 }

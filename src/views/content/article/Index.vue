@@ -4,11 +4,16 @@
     <div class="table-operator">
       <!-- 操作板块 -->
       <div class="row-item-tab clearfix">
-        <a-button v-action:add type="primary" icon="plus" @click="handleAdd">新增</a-button>
+        <a-button type="primary" icon="plus" @click="handleAdd">新增</a-button>
       </div>
     </div>
-    <a-table :columns="columns" :data-source="loadData">
+    <a-table rowKey="id" :columns="columns" :data-source="loadData">
+      <template slot="createTime" slot-scope="text, record">
+        {{formatDate(record.createTime)}}
+      </template>
       <template slot="action" slot-scope="text, record">
+        <a href="javascript:;" style="margin-right: 10px" @click="handleViewProject(record)">项目列表</a>
+        <a href="javascript:;" style="margin-right: 10px" @click="handleEdit(record)">编辑</a>
         <a-popconfirm title="是否删除?" @confirm="() => onDelete(record)">
           <a href="javascript:;">删除</a>
         </a-popconfirm>
@@ -22,10 +27,9 @@
 
 <script>
 import * as ArticleApi from '@/api/content/article'
-import * as CategoryApi from '@/api/content/article/category'
-import { ContentHeader, STable } from '@/components'
 import EditForm from './modules/EditForm'
 import AddForm from './modules/AddForm'
+import dayjs from 'dayjs'
 
 // 表格表头
 const columns = [
@@ -45,8 +49,12 @@ const columns = [
   },
   {
     title: '备注',
-    // width: '180px',
     dataIndex: 'remark',
+  },
+  {
+    title: '创建时间',
+    dataIndex: 'createTime',
+    scopedSlots: { customRender: 'createTime' },
   },
   {
     title: '操作',
@@ -60,16 +68,12 @@ const columns = [
 export default {
   name: 'Index',
   components: {
-    ContentHeader,
-    STable,
     AddForm,
     EditForm,
   },
   data() {
     return {
       expand: false,
-      // 当前表单元素
-      searchForm: this.$form.createForm(this),
       // 分类列表
       categoryList: [],
       // 查询参数
@@ -98,17 +102,6 @@ export default {
         .finally(() => (this.isLoading = false))
     },
 
-    // 确认搜索
-    handleSearch(e) {
-      e.preventDefault()
-      this.searchForm.validateFields((error, values) => {
-        if (!error) {
-          this.queryParam = { ...this.queryParam, ...values }
-          this.handleRefresh(true)
-        }
-      })
-    },
-
     // 删除记录
     handleDelete(item) {
       const app = this
@@ -133,7 +126,7 @@ export default {
 
     // 编辑记录
     handleEdit(item) {
-      this.$refs.EditForm.edit(item.article_id)
+      this.$refs.EditForm.edit(item.id)
     },
 
     /**
@@ -145,13 +138,19 @@ export default {
     },
     onDelete(record) {
       console.log(record, 'record')
-      ArticleApi.deleted(record.id)
-        .then((result) => {
-          console.log(result, 'result')
-          this.$message.success('删除成功', 1.5)
-          this.getCustomerList()
-        })
+      ArticleApi.deleted(record.id).then((result) => {
+        console.log(result, 'result')
+        this.$message.success('删除成功', 1.5)
+        this.getCustomerList()
+      })
     },
+    handleViewProject(record) {
+      console.log(record)
+      this.$router.push({ path: '/project/index', query: { id: record.id } })
+    },
+    formatDate (time) {
+      return dayjs(time).format('YYYY-MM-DD HH:mm:ss')
+    }
   },
 }
 </script>

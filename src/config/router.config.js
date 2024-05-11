@@ -1106,12 +1106,18 @@ export const constantRouterMap = [
               {
                 path: '/',
                 component: () => import(/* webpackChunkName: "content" */ '@/views/content/article/Index'),
-                meta: { title: '客户列表', keepAlive: false, permission: ['/content/article/index'] }
+                meta: { title: '客户列表', keepAlive: false }
               },
               {
-                path: '/content/article/category/index',
+                path: '/project/index',
                 component: () => import(/* webpackChunkName: "content" */ '@/views/content/article/category/Index'),
-                meta: { title: '文章分类', keepAlive: false, permission: ['/content/article/category/index'] }
+                meta: { title: '项目列表', keepAlive: false }
+              },
+              {
+                path: '/project/config',
+                component: () => import(/* webpackChunkName: "page" */ '@/views/page/Create'),
+                meta: { title: '配置内容', keepAlive: false },
+                hidden: true
               }
             ]
           }

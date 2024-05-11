@@ -11,22 +11,21 @@
   >
     <a-spin :spinning="confirmLoading">
       <a-form :form="form">
-        <a-form-item label="分类名称" :labelCol="labelCol" :wrapperCol="wrapperCol">
+        <a-form-item label="项目名称" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-input
             v-decorator="['name', { rules: [{ required: true, min: 2, message: '请输入至少2个字符' }] }]"
           />
         </a-form-item>
-        <a-form-item label="状态" :labelCol="labelCol" :wrapperCol="wrapperCol" extra="用户端是否展示">
-          <a-radio-group v-decorator="['status', { initialValue: 1, rules: [{ required: true }] }]">
-            <a-radio :value="1">显示</a-radio>
-            <a-radio :value="0">隐藏</a-radio>
-          </a-radio-group>
-        </a-form-item>
-        <a-form-item label="排序" :labelCol="labelCol" :wrapperCol="wrapperCol" extra="数字越小越靠前">
-          <a-input-number
-            :min="0"
-            v-decorator="['sort', { initialValue: 100, rules: [{ required: true, message: '请输入至少1个数字' }] }]"
+        <a-form-item label="项目描述" :labelCol="labelCol" :wrapperCol="wrapperCol">
+          <a-input
+            v-decorator="['desc', { rules: [{ required: false }] }]"
           />
+        </a-form-item>
+        <a-form-item label="状态" :labelCol="labelCol" :wrapperCol="wrapperCol">
+          <a-radio-group v-decorator="['status', { initialValue: 1, rules: [{ required: true }] }]">
+            <a-radio :value="1">启用</a-radio>
+            <a-radio :value="0">未启用</a-radio>
+          </a-radio-group>
         </a-form-item>
       </a-form>
     </a-spin>
@@ -76,7 +75,7 @@ export default {
     setFieldsValue () {
       const { $nextTick, form: { setFieldsValue } } = this
       $nextTick(() => {
-        setFieldsValue(pick(this.record, ['name', 'status', 'sort']))
+        setFieldsValue(pick(this.record, ['name', 'status', 'desc']))
       })
     },
 
@@ -102,10 +101,10 @@ export default {
     // 提交到后端api
     onFormSubmit (values) {
       this.confirmLoading = true
-      Api.edit({ categoryId: this.record['category_id'], form: values })
+      Api.edit({ ...this.record, ...values })
         .then(result => {
           // 显示成功
-          this.$message.success(result.message, 1.5)
+          this.$message.success('保存成功', 1.5)
           // 关闭对话框事件
           this.handleCancel()
           // 通知父端组件提交完成了

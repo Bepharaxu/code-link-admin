@@ -3,7 +3,7 @@ import { axios } from '@/utils/request'
 // api接口列表
 const api = {
   list: '/customer',
-  detail: '/content.article/detail',
+  detail: '/customer',
   add: '/customer',
   edit: '/customer',
   delete: '/customer'
@@ -19,11 +19,10 @@ export function list (params) {
 }
 
 // 详情信息
-export function detail (params) {
+export function detail (data) {
   return axios({
-    url: api.detail,
-    method: 'get',
-    params
+    url: api.detail + `/${data}`,
+    method: 'get'
   })
 }
 
@@ -45,8 +44,8 @@ export function add (data) {
  */
 export function edit (data) {
   return axios({
-    url: api.edit,
-    method: 'post',
+    url: api.edit + `/${data.id}`,
+    method: 'patch',
     data
   })
 }
@@ -58,7 +57,6 @@ export function edit (data) {
 export function deleted (data) {
   return axios({
     url: api.delete + `/${data}`,
-    method: 'delete',
-    data: data
+    method: 'delete'
   })
 }

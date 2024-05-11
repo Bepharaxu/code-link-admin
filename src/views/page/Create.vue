@@ -37,7 +37,7 @@
 import _ from 'lodash'
 import draggable from 'vuedraggable'
 import { inArray } from '@/utils/util'
-import * as Api from '@/api/page'
+import * as Api from '@/api/content/article/category'
 import { SelectImage } from '@/components'
 import { Components, Phone, Editor } from './modules'
 
@@ -65,10 +65,24 @@ export default {
   },
   // 初始化数据
   created () {
+    this.projectId = this.$route.query.id
+    this.getProjectDetail()
     // 获取初始化数据
     this.initData()
   },
   methods: {
+    getProjectDetail () {
+        Api.detail(this.projectId)
+        .then(result => {
+            if (result && result.length) {
+                this.project = result[0]
+                if (this.project.content) {
+                    this.data = JSON.parse(this.project.content)
+                }
+            }
+        })
+        .finally(() => this.isLoading = false)
+    },
 
     // 获取初始化数据
     initData () {
@@ -790,12 +804,13 @@ export default {
     onFormSubmit () {
       this.isLoading = true
       const { data, $message } = this
-      Api.add({ form: data })
+      console.log(data, 'data')
+      Api.updateContent({ ...this.project, content: JSON.stringify(data) })
         .then(result => {
           // 显示成功
-          $message.success(result.message, 1.5)
+          $message.success('保存成功', 1.5)
           // 跳转到列表页
-          setTimeout(() => this.$router.push('./index'), 1500)
+          setTimeout(() => this.$router.go(-1), 1500)
         })
         .finally(() => setTimeout(() => this.isLoading = false, 1500))
     }

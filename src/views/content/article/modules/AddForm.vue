@@ -51,7 +51,7 @@ export default {
   data () {
     return {
       // 对话框标题
-      title: '新增文章',
+      title: '新增客户',
       // 标签布局属性
       labelCol: {
         span: 7

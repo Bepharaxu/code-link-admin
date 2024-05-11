@@ -5,7 +5,16 @@
       <div class="image-box" :style="{ width: `${width}px`, height: `${height}px` }">
         <img :src="imgUrl" alt />
         <div class="update-box-black"></div>
-        <div class="uodate-repalce" @click="handleSelectImage">替换</div>
+        <a-upload
+          name="iFile"
+          :accept="accept"
+          :beforeUpload="beforeUpload"
+          :customRequest="onUpload"
+          :multiple="true"
+          :showUploadList="false"
+        >
+          <div class="uodate-repalce">替换</div>
+        </a-upload>
       </div>
     </a-tooltip>
     <!-- 文件选择器 -->
@@ -21,11 +30,11 @@ import { FilesModal } from '@/components/Modal'
 export default {
   name: 'SImage',
   components: {
-    FilesModal
+    FilesModal,
   },
   model: {
     prop: 'value',
-    event: 'change'
+    event: 'change',
   },
   props: {
     // 默认显示的图片
@@ -35,35 +44,32 @@ export default {
     // 元素的尺寸(宽)
     width: PropTypes.integer.def(70),
     // 元素的尺寸(高)
-    height: PropTypes.integer.def(70)
-
+    height: PropTypes.integer.def(70),
   },
-  data () {
+  data() {
     return {
       // 选择的图片
-      imgUrl: ''
+      imgUrl: '',
     }
   },
   watch: {
     value: {
       // 首次加载的时候执行函数
       immediate: true,
-      handler (val) {
+      handler(val) {
         this.imgUrl = val
-      }
-    }
+      },
+    },
   },
-  created () {
-  },
+  created() {},
   methods: {
-
     // 打开文件选择器
-    handleSelectImage () {
+    handleSelectImage() {
       this.$refs.FilesModal.show()
     },
 
     // 文件库modal确认回调
-    handleSelectImageSubmit (result) {
+    handleSelectImageSubmit(result) {
       if (result.length > 0) {
         const file = result[0]
         this.onChange(file)
@@ -71,16 +77,15 @@ export default {
     },
 
     // 触发change事件
-    onChange (file) {
+    onChange(file) {
       // 记录imgUrl
       this.imgUrl = file.preview_url
       // v-model
       this.$emit('change', this.imgUrl)
       // 触发update事件
       this.$emit('update', file)
-    }
-
-  }
+    },
+  },
 }
 </script>
 
